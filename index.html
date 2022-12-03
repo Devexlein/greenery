@@ -48,7 +48,7 @@
                      </a>
                   </li>
                   <li class="header__menu-item">
-                     <a data-goto=".wishes" href="#" class="header__menu-link">Поделите своими пожеланиями</a>
+                     <a data-goto=".started__form" href="#" class="header__menu-link">Поделите своими пожеланиями</a>
                   </li>
                   <li class="header__menu-item">
                      <a data-goto=".advantages" href="#" class="header__menu-link">4 причины заказать у нас</a>
@@ -69,7 +69,7 @@
                      <a data-goto=".showroom" href="#" class="header__menu-link">Карта</a>
                   </li>
                   <li class="header__menu-item">
-                     <a data-goto=".question-form" href="#" class="header__menu-link">Остались вопросы?</a>
+                     <a data-goto=".more_questions" href="#" class="header__menu-link">Остались вопросы?</a>
                   </li>
                </ul>
             </div>
@@ -91,6 +91,19 @@
                   <img src="./img/started/started-bg_510x220.jpg"
                      alt="Фото композиции из стабилизированного мха в интерьере">
                </picture>
+               <div id="started__form" class="started__form form-box">
+                  <div class="form-box__title">Поделитесь с дизайнерами своими пожеланиями и получите идеальный проект
+                     бесплатно</div>
+                  <form action="#" id="free-project" class="form-box__form">
+                     <div class="form-box__input">
+                        <input type="text" placeholder="Как к Вам обращаться?" name="name">
+                     </div>
+                     <div class="form-box__input">
+                        <input type="tel" placeholder="Ваш телефон" name="tel" required>
+                     </div>
+                     <button type="submit" class="form-box__button button">Хочу увидеть</button>
+                  </form>
+               </div>
             </div>
          </section>
          <section id="wishes" class="wishes"></section>
@@ -109,7 +122,7 @@
                      <div id="map" class="map__image map"></div>
                   </div>
                </div>
-               <div id="question-form" class="showroom__form"></div>
+               <div id="more_questions" class="showroom__form  form-box"></div>
             </div>
          </section>
       </main>
@@ -120,7 +133,7 @@
                <p class="logo__description">ИП Шиман Илья Михайлович</p>
                <p class="logo__description">ИНН 312343336879</p>
                <p class="logo__description">ОГРН 318312300033174</p>
-               <a href="#" class="logo__privacy-policy">Политика конфиденциальности</a>
+               <a href="#" target="_blank" class="logo__privacy-policy">Политика конфиденциальности</a>
                </p>
             </div>
             <div class="footer__contacts contacts">
