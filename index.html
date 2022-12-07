@@ -95,15 +95,19 @@
                   <h4 class="form-box__subtitle">
                      Поделитесь с дизайнерами своими пожеланиями и получите идеальный проект бесплатно
                   </h4>
-                  <form action="#" id="free-project" class="form-box__form">
-                     <div class="form-box__input">
-                        <input type="text" placeholder="Как к Вам обращаться?" name="name">
-                     </div>
-                     <div class="form-box__input">
-                        <input type="tel" placeholder="Ваш телефон" name="tel" required>
-                     </div>
-                     <button type="submit" class="form-box__button button">Хочу увидеть</button>
-                  </form>
+                  <div class="form-box__body">
+                     <form action="#" id="free-project" class="form-box__form">
+                        <div class="form-box__input form-box__input_changing">
+                           <input class="form-box__input-large" type="text" placeholder="Как к Вам обращаться?"
+                              name="name">
+                           <input class="form-box__input-small" type="text" placeholder="Ваше имя" name="name">
+                        </div>
+                        <div class="form-box__input">
+                           <input type="tel" placeholder="Ваш телефон" name="tel" required>
+                        </div>
+                        <button type="submit" class="form-box__button button">Хочу увидеть</button>
+                     </form>
+                  </div>
                </div>
             </div>
          </section>
@@ -153,6 +157,66 @@
                            и ОАЭ</p>
                      </div>
                   </div>
+               </div>
+            </div>
+         </section>
+         <section id="price" class="price">
+            <div class="price__container">
+               <h2 class="price__title title">Узнайте стоимость Вашей композиции</h2>
+               <div class="price__form form-box">
+                  <h3 class="form-box__title">Узнайте стоимость Вашей композиции</h3>
+                  <h4 class="form-box__subtitle">
+                     Что хотите видеть в композиции? Можно выбрать несколько вариантов.
+                  </h4>
+                  <form action="#" id="cost-composition" class="form-box__form">
+                     <div class="form-box__checkbox checkbox">
+                        <div class="checkbox__item checkbox__item_1">
+                           <label class="checkbox__label">
+                              <input type="checkbox" value="1" name="plants" class="checkbox__real-input">
+                              <span class="checkbox__custom-input"></span>
+                              <span class="checkbox__label-text">Мох</span>
+                           </label>
+                        </div>
+                        <div class="checkbox__item checkbox__item_2">
+                           <label class="checkbox__label">
+                              <input type="checkbox" value="1" name="plants" class="checkbox__real-input">
+                              <span class="checkbox__custom-input"></span>
+                              <span class="checkbox__label-text">Стабилизированные растения</span>
+                           </label>
+                        </div>
+                        <div class="checkbox__item checkbox__item_3">
+                           <label class="checkbox__label">
+                              <input type="checkbox" value="1" name="plants" class="checkbox__real-input">
+                              <span class="checkbox__custom-input"></span>
+                              <span class="checkbox__label-text">Дерево</span>
+                           </label>
+                        </div>
+                        <div class="checkbox__item checkbox__item_4">
+                           <label class="checkbox__label">
+                              <input type="checkbox" value="1" name="plants" class="checkbox__real-input">
+                              <span class="checkbox__custom-input"></span>
+                              <span class="checkbox__label-text">Искусственные растения</span>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="form-box__input form-box__input_wide">
+                        <input type="text" placeholder="Какая примерная площадь?" name="square">
+                     </div>
+                     <div class="form-box__input form-box__input_wide">
+                        <textarea type="text" placeholder="Комментарий" name="comment"></textarea>
+                     </div>
+                     <div class="form-box__wrap">
+                        <div class="form-box__input">
+                           <input class="form-box__input-large" type="text" placeholder="Как к Вам обращаться?"
+                              name="name">
+                           <input class="form-box__input-small" type="text" placeholder="Ваше имя" name="name">
+                        </div>
+                        <div class="form-box__input">
+                           <input type="tel" placeholder="Ваш телефон" name="tel" required>
+                        </div>
+                     </div>
+                     <button type="submit" class="form-box__button button">Отправить</button>
+                  </form>
                </div>
             </div>
          </section>
@@ -230,12 +294,12 @@
                      <div id="map" class="map__image map"></div>
                   </div>
                </div>
-               <div id="more_questions" class="showroom__form form-box">
+               <div id="showroom__form" class="showroom__form form-box">
                   <h3 class="form-box__title">Остались вопросы?</h3>
                   <h4 class="form-box__subtitle">
                      Приезжайте в наш шоурум или расскажите о задаче нашим менеджерам
                   </h4>
-                  <form action="#" id="free-project" class="form-box__form">
+                  <form action="#" id="more-questions" class="form-box__form">
                      <div class="form-box__input">
                         <input type="text" placeholder="Как к Вам обращаться?" name="name">
                      </div>
@@ -247,8 +311,9 @@
                            <input type="checkbox" value="1" name="consent-privacy-policy" class="checkbox__real-input"
                               required>
                            <span class="checkbox__custom-input"></span>
-                           <span class="checkbox__label-text">Нажимая кнопку вы соглашаетесь с<a href="#">Политикой
-                                 Конфиденциальности</a></spa>
+                           <span class="checkbox__label-text checkbox__label-text_policy">Нажимая кнопку вы соглашаетесь
+                              с<a href="#">Политикой
+                                 Конфиденциальности</a></span>
                         </label>
                      </div>
                      <button type="submit" class="form-box__button button">Отправить</button>
