@@ -15,7 +15,7 @@
 
 <body>
    <div class="wrapper">
-      <header id="open" class="header">
+      <header id="open" class="header lock-padding">
          <div id="close" class="header__container">
             <div class="header__logo logo">
                <img src="./img/logo.svg" alt="Логотип компании GREENERY" class="logo__image">
@@ -40,7 +40,7 @@
                   <div class="contacts__email-name">info@mygreenery.ru</div>
                </a>
             </div>
-            <div class="header__menu">
+            <div class="header__menu lock-padding">
                <ul class="header__menu-list">
                   <li class="header__menu-item">
                      <a data-goto=".started" href="#" class="header__menu-link">
@@ -308,18 +308,18 @@
                      </div>
                      <div class="form-box__checkbox checkbox">
                         <label class="checkbox__label">
-                           <input type="checkbox" value="1" name="consent-privacy-policy" class="checkbox__real-input"
-                              required>
+                           <input type="checkbox" required name="consent-privacy-policy" class="checkbox__real-input">
                            <span class="checkbox__custom-input"></span>
                            <span class="checkbox__label-text checkbox__label-text_policy">Нажимая кнопку вы соглашаетесь
-                              с<a href="#">Политикой
-                                 Конфиденциальности</a></span>
+                              с<a href="#">Политикой Конфиденциальности</a></span>
                         </label>
                      </div>
-                     <button type="submit" class="form-box__button button">Отправить</button>
+                     <button type="submit" aria-labelledby="successfully-popup-open"
+                        class="form-box__button button">Отправить</button>
+
                   </form>
                </div>
-            </div>
+            </div><a href="#successfully-popup" id="successfully-popup-open" class="popup-link">Форма отправлена</a>
          </section>
       </main>
       <footer class="footer">
@@ -330,7 +330,6 @@
                <p class="logo__description">ИНН 312343336879</p>
                <p class="logo__description">ОГРН 318312300033174</p>
                <a href="#" target="_blank" class="logo__privacy-policy">Политика конфиденциальности</a>
-               </p>
             </div>
             <div class="footer__contacts contacts">
                <a href="tel:+74994093152" class="contacts__phone">
@@ -349,9 +348,29 @@
             </div>
          </div>
       </footer>
-   </div>
-   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-   <script src="./js/main.js"></script>
+
+      <div class="popup" id="successfully-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <div class="popup__form">
+                  <div class="popup__image">
+                     <img src="./img/popup/successfully-icon.png" alt="Иконка успешной отправки">
+                  </div>
+                  <h3 class="popup__title">Спасибо! Ваши контакты отправлены</h3>
+                  <p class="popup__text">Мы свяжемся с Вами в ближайшее время.</p>
+                  <p class="popup__text">Предлагаем ознакомиться с полным каталогом наших работ:</p>
+                  <a href="#document" class="popup__button button" download>скачать каталог</a>
+                  <a data-goto=".showroom__form" href="#" class="popup__close popup__close_show close-popup">Вернуться
+                     на
+                     сайт</a>
+               </div>
+               <a data-goto=".showroom__form" href="#" class="popup__close close-popup">Вернуться на сайт</a>
+            </div>
+         </div>
+      </div>
+
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+      <script src="./js/main.js"></script>
 </body>
 
 </html>
