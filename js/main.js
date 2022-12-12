@@ -78,12 +78,14 @@ ymaps.ready(init);
 
 // попапы
 const popupLinks = document.querySelectorAll('.popup-link');
+// коллекция форм, при оправке которых открывается попап
+const submitForms = document.querySelectorAll('#free-project, #cost-composition, #more-questions');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
-console.log(popupLinks);
 
 let unlock = true;
 
+// определяем текущий попап по нажатой ссылке
 if (popupLinks.length > 0) {
    for (let i = 0; i < popupLinks.length; i++) {
       const popupLink = popupLinks[i];
@@ -96,6 +98,7 @@ if (popupLinks.length > 0) {
    }
 }
 
+// закрытие попапа при нажатии на кнопку
 const popupCloseLink = document.querySelectorAll('.close-popup');
 if (popupCloseLink.length > 0) {
    for (let i = 0; i < popupCloseLink.length; i++) {
@@ -107,6 +110,7 @@ if (popupCloseLink.length > 0) {
    }
 }
 
+// открытие текущего попапа по полученной ссылке
 function popupOpen(curentPopup) {
    if (curentPopup && unlock) {
       const popupActive = document.querySelector('.popup.open');
@@ -133,6 +137,49 @@ function popupClose(popupActive, doUnlock = true) {
       }
    }
 }
+
+// вызов попапа успешной отправки формы
+if (submitForms.length > 0) {
+   const successfullyPopup = document.getElementById('successfully-popup');
+   for (let i = 0; i < submitForms.length; i++) {
+      const submitForm = submitForms[i];
+      submitForm.addEventListener("submit", function (e) {
+         popupOpen(successfullyPopup);
+         e.preventDefault();
+      });
+   }
+}
+
+// закрываем попап клавишей Esc
+document.addEventListener("keydown", function (e) {
+   if (e.keyCode == 27) {
+      const popupActive = document.querySelector('.popup.open');
+      if (popupActive)
+         popupClose(popupActive);
+   }
+});
+
+(function () {
+   // проверяем поддержку 
+   if (!Element.prototype.closest) {
+      Element.prototype.closest = function (css) {
+         var node = this;
+         while (node) {
+            if (node.matches(css)) return node;
+            else node = node.parentElement;
+         }
+         return null;
+      };
+   }
+})();
+(function () {
+   // проверяем поддержку 
+   if (!Element.prototype.matches) {
+      Element.prototype.matches = Element.prototype.matchesSelector ||
+         Element.prototype.mozmatchesSelector ||
+         Element.prototype.matchesSelector;
+   }
+})();
 
 // скрываем скролл, добавляя паддинг body и объектам с position: fixed
 function bodyLock() {
@@ -171,34 +218,3 @@ function bodyUnlock() {
       unlock = true;
    }, timeout);
 }
-
-// закрываем попап клавишей Esc
-document.addEventListener("keydown", function (e) {
-   if (e.keyCode == 27) {
-      const popupActive = document.querySelector('.popup.open');
-      if (popupActive)
-         popupClose(popupActive);
-   }
-});
-
-(function () {
-   // проверяем поддержку 
-   if (!Element.prototype.closest) {
-      Element.prototype.closest = function (css) {
-         var node = this;
-         while (node) {
-            if (node.matches(css)) return node;
-            else node = node.parentElement;
-         }
-         return null;
-      };
-   }
-})();
-(function () {
-   // проверяем поддержку 
-   if (!Element.prototype.matches) {
-      Element.prototype.matches = Element.prototype.matchesSelector ||
-         Element.prototype.mozmatchesSelector ||
-         Element.prototype.matchesSelector;
-   }
-})();
