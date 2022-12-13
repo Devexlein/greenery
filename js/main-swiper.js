@@ -2,7 +2,35 @@
 
 let feedbackSwiper = new Swiper('.feedback__slider', {
    slidesPerView: 3,
-   spaceBetween: 100,
+   spaceBetween: 50,
+   breakpoints: {
+      320: {
+         slidesPerView: 3,
+         spaceBetween: 50
+      },
+      575.98: {
+         slidesPerView: 3,
+         spaceBetween: 50
+      },
+      767.98: {
+         slidesPerView: 3,
+         spaceBetween: 20
+      },
+      991.98: {
+         slidesPerView: 3,
+         spaceBetween: 40
+      },
+      1190: {
+         slidesPerView: 3,
+         spaceBetween: 50
+      },
+      1191: {
+         slidesPerView: 3,
+         spaceBetween: 100
+      }
+   },
+   slidesOffsetBefore: 80,
+   centerInsufficientSlides: true,
    watchOverflow: true,
    navigation: {
       nextEl: '.swiper-button-next.feedback__btn-next',
@@ -16,15 +44,18 @@ let feedbackSwiper = new Swiper('.feedback__slider', {
    mousewheel: {
       sensitivity: 1,
    },
-   cssMode: true,
+   preventClicks: true,
    simulateTouch: true,
-   touchRatio: 2,
+   touchRatio: 1,
    grabCursor: true,
+   loop: true,
+   loopedSlides: 3,
+   // freeMode: true,
+   cssMode: true,
 });
 
 let popupFeedbackSwiper = new Swiper('.popup-feedback__slider', {
-   slidesPerView: 2,
-   spaceBetween: 20,
+   slidesPerView: 1,
    watchOverflow: true,
    navigation: {
       nextEl: '.swiper-button-next.popup-feedback__btn-next',
