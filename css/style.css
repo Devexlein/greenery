@@ -627,9 +627,9 @@ textarea:focus:-ms-input-placeholder {
    color: #FDFFFE;
 }
 
-.swiper-button-prev.swiper-button-disabled,
-.swiper-button-next.swiper-button-disabled {
-   /* opacity: 0; */
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+   color: #44775F;
 }
 
 /* ------- */
@@ -2121,12 +2121,6 @@ textarea:focus:-ms-input-placeholder {
    position: relative;
 }
 
-.feedback__title {}
-
-.feedback__buttons {}
-
-.slider-buttons {}
-
 .feedback__btn-prev {
    margin-left: 15px;
 }
@@ -2139,10 +2133,6 @@ textarea:focus:-ms-input-placeholder {
    padding: 0 110px;
    min-width: 0;
 }
-
-.feedback__wrapper {}
-
-.feedback__slide {}
 
 .feedback__item {
    background-color: #44775F;
@@ -2260,26 +2250,403 @@ textarea:focus:-ms-input-placeholder {
    }
 }
 
-/* ------  ------------------- */
-/* @media (max-width: 1190px) {}
+/* ------ customers ------------------- */
+.customers {
+   padding-top: 100px;
+}
+
+.customers__container {
+   position: relative;
+}
+
+.customers__btn-prev {
+   margin-left: 15px;
+}
+
+.customers__btn-next {
+   margin-right: 15px;
+}
+
+.customers__slider {
+   padding: 0 55px;
+   min-width: 0;
+}
+
+.customers__item {
+   display: grid;
+   grid-template-columns: repeat(24, 1fr);
+   grid-template-rows: max-content;
+   align-items: center;
+   gap: 50px 30px;
+}
+
+.customers__image {
+   max-width: 350px;
+   text-align: center;
+}
+
+.customers__image_hidden {
+   display: none;
+}
+
+.customers__image img {
+   max-width: 100%;
+   object-fit: contain;
+}
+
+/*  slide 1 */
+
+.customers__image_sber {
+   grid-column: span 8;
+}
+
+.customers__image_mega {
+   grid-column: span 7;
+}
+
+.customers__image_5 {
+   grid-column: span 3;
+}
+
+.customers__image_tanuki {
+   grid-column: span 6;
+}
+
+.customers__image_ranhigs {
+   grid-column: span 6;
+}
+
+.customers__image_mailru {
+   grid-column: span 3;
+}
+
+.customers__image_vkusvill {
+   grid-column: span 7;
+}
+
+.customers__image_nornicel {
+   grid-column: span 8;
+}
+
+/*  slide 2 */
+
+.customers__image_ikea {
+   grid-column: span 5;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.customers__image_nike {
+   grid-column: span 4;
+}
+
+.customers__image_rosbiznes {
+   grid-column: span 6;
+}
+
+.customers__image_adidas {
+   grid-column: span 4;
+}
+
+.customers__image_polist {
+   grid-column: span 5;
+}
+
+.customers__image_crocus {
+   grid-column: span 6;
+}
+
+.customers__image_mango {
+   grid-column: span 5;
+}
+
+.customers__image_bm {
+   grid-column: span 4;
+}
+
+.customers__image_skb-contur {
+   grid-column: span 6;
+}
+
+.customers__image_cLub-500 {
+   grid-column: span 3;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+/*  slide 3 */
+
+.customers__image_wb {
+   grid-column: span 4;
+}
+
+.customers__image_performance-food {
+   grid-column: span 8;
+}
+
+.customers__image_yandex {
+   grid-column: span 3;
+}
+
+.customers__image_blackwood {
+   grid-column: span 5;
+}
+
+.customers__image_m-lounge {
+   grid-column: span 4;
+}
+
+.customers__image_myskin {
+   grid-column: span 6;
+}
+
+.customers__image_fork-spoon {
+   grid-column: span 3;
+}
+
+.customers__image_volяwear {
+   grid-column: span 7;
+}
+
+.customers__image_ozon {
+   grid-column: span 4;
+}
+
+.customers__image_chicken {
+   grid-column: span 4;
+}
+
+/* @media (max-width: 1190px) {} */
 
 @media (max-width: 991.98px) {
-   .advantages {
+   .customers {
       padding-top: 80px;
+   }
+
+   .customers__slider {
+      padding: 0 40px;
+   }
+
+   .customers__item {
+      gap: 40px 20px;
    }
 }
 
 @media (max-width: 767.98px) {
-   .advantages {
+   .customers {
       padding-top: 60px;
+   }
+
+   .customers__btn-prev {
+      margin-left: 0px;
+   }
+
+   .customers__btn-next {
+      margin-right: 0px;
+   }
+
+   .customers__slider {
+      padding: 0 30px;
+   }
+
+   .customers__item {
+      gap: 30px 20px;
+   }
+
+   .customers__image_hidden {
+      display: block;
+   }
+
+   .customers__image_visible {
+      display: none;
+   }
+
+   /*  slide 1 */
+
+   .customers__image_sber {
+      grid-column: span 12;
+      order: 1;
+   }
+
+   .customers__image_mega {
+      grid-column: span 10;
+      order: 2;
+   }
+
+   .customers__image_5 {
+      grid-column: span 4;
+      order: 6;
+   }
+
+   .customers__image_tanuki {
+      grid-column: span 7;
+      order: 3;
+   }
+
+   .customers__image_ranhigs {
+      grid-column: span 10;
+      order: 8;
+   }
+
+   .customers__image_mailru {
+      grid-column: span 4;
+      order: 4;
+   }
+
+   .customers__image_vkusvill {
+      grid-column: span 7;
+      order: 5;
+   }
+
+   .customers__image_nornicel {
+      grid-column: span 12;
+      order: 7;
+   }
+
+   /*  slide 2 */
+
+   .customers__image_ikea {
+      grid-column: span 8;
+      border-radius: 5px;
+      order: 1;
+   }
+
+   .customers__image_nike {
+      grid-column: span 6;
+      order: 2;
+   }
+
+   .customers__image_rosbiznes {
+      grid-column: span 9;
+      order: 3;
+   }
+
+   .customers__image_adidas {
+      grid-column: span 5;
+      order: 10;
+   }
+
+   .customers__image_polist {
+      grid-column: span 6;
+      order: 7;
+   }
+
+   .customers__image_crocus {
+      grid-column: span 6;
+      order: 4;
+   }
+
+   .customers__image_ozon {
+      grid-column: span 6;
+      order: 5;
+   }
+
+   .customers__image_mango {
+      grid-column: span 6;
+      order: 6;
+   }
+
+   .customers__image_bm {
+      grid-column: span 5;
+      order: 9;
+   }
+
+   .customers__image_skb-contur {
+      grid-column: span 9;
+      order: 8;
+   }
+
+   .customers__image_cLub-500 {
+      grid-column: span 4;
+      border-radius: 5px;
+      order: 11;
+   }
+
+   /*  slide 3 */
+
+   .customers__image_wb {
+      grid-column: span 5;
+      order: 3;
+   }
+
+   .customers__image_performance-food {
+      grid-column: span 13;
+      order: 2;
+   }
+
+   .customers__image_yandex {
+      grid-column: span 4;
+      order: 1;
+   }
+
+   .customers__image_blackwood {
+      grid-column: span 9;
+      order: 5;
+   }
+
+   .customers__image_m-lounge {
+      grid-column: span 5;
+      order: 7;
+   }
+
+   .customers__image_myskin {
+      grid-column: span 9;
+      order: 6;
+   }
+
+   .customers__image_fork-spoon {
+      grid-column: span 5;
+      order: 9;
+   }
+
+   .customers__image_volяwear {
+      grid-column: span 12;
+      order: 8;
+   }
+
+
+   .customers__image_chicken {
+      grid-column: span 5;
+      order: 4;
    }
 }
 
 @media (max-width: 575.98px) {
-   .advantages {
+   .customers {
       padding-top: 40px;
    }
-} */
+
+   .customers__item {
+      grid-template-rows: auto;
+      gap: 20px 10px;
+   }
+
+   .customers__image img {
+      max-width: 90%;
+   }
+
+   .customers__image_ikea img,
+   .customers__image_cLub-500 img {
+      border-radius: 5px;
+      overflow: hidden;
+   }
+}
+
+@media (max-width: 500.98px) {
+   .customers__slider {
+      padding: 0 15px;
+   }
+
+   .customers__item {
+      gap: 20px 5px;
+   }
+
+   .customers__image img {
+      max-width: 85%;
+   }
+}
+
+
 /* ------ showroom ------------------- */
 
 .showroom {
@@ -2292,7 +2659,8 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .showroom__content {
-   flex: 0 1 65%;
+   flex: 0 1 733px;
+   width: 100%;
    position: relative;
 }
 
@@ -2322,7 +2690,7 @@ textarea:focus:-ms-input-placeholder {
 .showroom__map {
    border: 3px solid #44775F;
    border-radius: 15px;
-   overflow: hidden;
+   overflow: hidden !important;
 }
 
 .showroom__form {
@@ -2351,6 +2719,11 @@ textarea:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 1190px) {
+   .showroom__content {
+      flex: 0 1 65%;
+      width: 590px;
+   }
+
    .showroom__adress {
       width: 200px;
       height: 200px;
@@ -2377,6 +2750,7 @@ textarea:focus:-ms-input-placeholder {
 
    .showroom__content {
       flex: 0 1 auto;
+      width: 100%;
       margin-bottom: 40px;
    }
 
