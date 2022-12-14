@@ -522,6 +522,7 @@ textarea:focus:-ms-input-placeholder {
    color: #FDFFFE;
    font-weight: 700;
    font-size: 20px;
+   line-height: 54px;
    text-transform: uppercase;
    width: 290px;
    height: 54px;
@@ -538,7 +539,7 @@ textarea:focus:-ms-input-placeholder {
    background-color: #FDFFFE;
 }
 
-/* ------ cards ------------------- */
+/* ------ card / product-box ------------------- */
 .card {
    display: flex;
    flex-direction: column;
@@ -576,18 +577,61 @@ textarea:focus:-ms-input-placeholder {
    font-size: 25px;
 }
 
-.card__subtitle span {
-   display: inline-block;
-}
-
 .card__text {
    font-size: 20px;
    line-height: 110%;
 }
 
+.card__subtitle span,
 .card__text span {
    display: inline-block;
 }
+
+.product-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.product-box__image {
+   position: relative;
+   padding: 0px 0px 91.555% 0px;
+   width: 100%;
+   border: 3px solid #44775F;
+   border-radius: 15px;
+   overflow: hidden;
+   margin-bottom: 30px;
+}
+
+.product-box__image img {
+   /* max-width: 100%; */
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.product-box__body {
+   flex: 1 1 auto;
+   margin-bottom: 40px;
+}
+
+.product-box__title {
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 140%;
+   text-align: center;
+   max-width: 250px;
+}
+
+.product-box__title span {
+   display: inline-block;
+}
+
+.product-box__link {}
 
 /* ------ map ------------------- */
 
@@ -631,8 +675,6 @@ textarea:focus:-ms-input-placeholder {
 .swiper-button-next:focus {
    color: #44775F;
 }
-
-/* ------- */
 
 /* ---  popups  ---- */
 .popup {
@@ -784,7 +826,6 @@ textarea:focus:-ms-input-placeholder {
 
 .popup__button {
    display: block;
-   line-height: 54px;
 }
 
 .popup__return-back {
@@ -1082,6 +1123,7 @@ textarea:focus:-ms-input-placeholder {
 
    .button {
       height: 50px;
+      line-height: 50px;
       font-size: 18px;
    }
 
@@ -1111,6 +1153,18 @@ textarea:focus:-ms-input-placeholder {
       display: inline-block;
       font-size: 18px;
       max-width: none;
+   }
+
+   .product-box__image {
+      margin-bottom: 20px;
+   }
+
+   .product-box__body {
+      margin-bottom: 30px;
+   }
+
+   .product-box__title {
+      font-size: 23px;
    }
 
    .popup__content {
@@ -1148,7 +1202,8 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .form-box,
-   .popup__form {
+   .popup__form,
+   .product-box__image {
       border: 2px solid #44775F;
       border-radius: 5px;
    }
@@ -1450,6 +1505,7 @@ textarea:focus:-ms-input-placeholder {
    .button {
       width: 220px;
       height: 40px;
+      line-height: 40px;
       font-size: 16px;
    }
 
@@ -1462,16 +1518,24 @@ textarea:focus:-ms-input-placeholder {
       font-size: 14px;
    }
 
+   .product-box__image {
+      margin-bottom: 10px;
+   }
+
+   .product-box__body {
+      margin-bottom: 20px;
+   }
+
+   .product-box__title {
+      font-size: 22px;
+   }
+
    .popup__title {
       font-size: 20px;
    }
 
    .popup__text {
       font-size: 16px;
-   }
-
-   .popup__button {
-      line-height: 40px;
    }
 
    .popup__return-back {
@@ -1988,25 +2052,30 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /* ------ works ------------------- */
-/* @media (max-width: 1190px) {}
+.works {
+   padding-top: 100px;
+}
+
+@media (max-width: 1190px) {}
 
 @media (max-width: 991.98px) {
-   .advantages {
+   .works {
       padding-top: 80px;
    }
 }
 
 @media (max-width: 767.98px) {
-   .advantages {
+   .works {
       padding-top: 60px;
    }
 }
 
 @media (max-width: 575.98px) {
-   .advantages {
+   .works {
       padding-top: 40px;
    }
-} */
+}
+
 /* ------ price ------------------- */
 .price {
    padding-top: 100px;
@@ -2111,6 +2180,82 @@ textarea:focus:-ms-input-placeholder {
       width: 275px;
    }
 }
+
+/* ------ products ------------------- */
+.products {
+   padding-top: 100px;
+}
+
+.products__container {}
+
+.products__items {
+   display: flex;
+   margin: 0px -20px 0px -20px;
+}
+
+.products__item {
+   flex: 0 1 33.333%;
+   padding: 0px 20px 0px 20px;
+}
+
+@media (max-width: 1190px) {
+   .products__items {
+      margin: 0px -15px 0px -15px;
+   }
+
+   .products__item {
+      padding: 0px 15px 0px 15px;
+   }
+}
+
+@media (max-width: 991.98px) {
+   .products {
+      padding-top: 80px;
+   }
+
+   .products__items {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -40px;
+   }
+
+   .products__item {
+      flex: 0 1 50%;
+      margin-top: 40px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .products {
+      padding-top: 60px;
+   }
+
+   .products__item {
+      flex: 0 0 75%;
+      width: 100%;
+   }
+}
+
+@media (max-width: 575.98px) {
+   .feedback {
+      padding-top: 40px;
+   }
+}
+
+@media (max-width: 500.98px) {
+   .products__item {
+      flex: 0 1 85%;
+   }
+}
+
+@media (max-width: 400.98px) {
+   .products__item {
+      flex: 0 1 auto;
+      width: 100%;
+   }
+}
+
+@media (max-width: 350.98px) {}
 
 /* ------ feedback ------------------- */
 .feedback {
@@ -2275,7 +2420,7 @@ textarea:focus:-ms-input-placeholder {
 .customers__item {
    display: grid;
    grid-template-columns: repeat(24, 1fr);
-   grid-template-rows: max-content;
+   grid-template-rows: auto;
    align-items: center;
    gap: 50px 30px;
 }

@@ -75,34 +75,6 @@ let popupFeedbackSwiper = new Swiper('.popup-feedback__slider', {
 
 let customersSwiper = new Swiper('.customers__slider', {
    slidesPerView: 1,
-   // spaceBetween: 30,
-   breakpoints: {
-      // 320: {
-      //    slidesPerView: 3,
-      //    spaceBetween: 50
-      // },
-      // 575.98: {
-      //    slidesPerView: 3,
-      //    spaceBetween: 50
-      // },
-      // 767.98: {
-      //    slidesPerView: 3,
-      //    spaceBetween: 20
-      // },
-      // 991.98: {
-      //    slidesPerView: 3,
-      //    spaceBetween: 40
-      // },
-      // 1190: {
-      //    slidesPerView: 3,
-      //    spaceBetween: 50
-      // },
-      // 1191: {
-      //    slidesPerView: 3,
-      //    spaceBetween: 100
-      // }
-   },
-   // slidesPerColumn: 2,
    watchOverflow: true,
    navigation: {
       nextEl: '.swiper-button-next.customers__btn-next',
@@ -120,7 +92,5 @@ let customersSwiper = new Swiper('.customers__slider', {
    simulateTouch: true,
    touchRatio: 1,
    grabCursor: true,
-   // loop: true,
-   // loopedSlides: 3,
    cssMode: true,
 });

@@ -145,7 +145,7 @@ if (submitForms.length > 0) {
       const submitForm = submitForms[i];
       submitForm.addEventListener("submit", function (e) {
          popupOpen(successfullyPopup);
-         // e.preventDefault();
+         e.preventDefault();
       });
    }
 }
