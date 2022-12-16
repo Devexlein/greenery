@@ -94,3 +94,199 @@ let customersSwiper = new Swiper('.customers__slider', {
    grabCursor: true,
    cssMode: true,
 });
+
+let paintingsTabsSwiper = new Swiper('.tabs__paintings-slider', {
+   breakpoints: {
+      575.98: {
+         slidesPerView: 1,
+         spaceBetween: 0,
+         // loop: true,
+         // loopedSlides: 1
+      },
+      767.98: {
+         slidesPerView: 2,
+         spaceBetween: 0,
+         // loopedSlides: 2
+      },
+      991.98: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1190: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1191: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      }
+   },
+   centerInsufficientSlides: true,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.tabs__btn-next_paintings',
+      prevEl: '.swiper-button-prev.tabs__btn-prev_paintings'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   preventClicks: true,
+   simulateTouch: true,
+   touchRatio: 1,
+   grabCursor: true,
+   // loop: true,
+   // loopedSlides: 3,
+   cssMode: true,
+});
+
+let wallsTabsSwiper = new Swiper('.tabs__walls-slider', {
+   breakpoints: {
+      575.98: {
+         slidesPerView: 1,
+         spaceBetween: 0,
+         // loop: true,
+         // loopedSlides: 1
+      },
+      767.98: {
+         slidesPerView: 2,
+         spaceBetween: 0,
+         // loopedSlides: 2
+      },
+      991.98: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1190: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1191: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      }
+   },
+   centerInsufficientSlides: true,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.tabs__btn-next_walls',
+      prevEl: '.swiper-button-prev.tabs__btn-prev_walls'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   preventClicks: true,
+   simulateTouch: true,
+   touchRatio: 1,
+   grabCursor: true,
+   // loop: true,
+   // loopedSlides: 3,
+   cssMode: true,
+});
+
+let logosTabsSwiper = new Swiper('.tabs__logos-slider', {
+   breakpoints: {
+      575.98: {
+         slidesPerView: 1,
+         spaceBetween: 0,
+         // loop: true,
+         // loopedSlides: 1
+      },
+      767.98: {
+         slidesPerView: 2,
+         spaceBetween: 0,
+         // loopedSlides: 2
+      },
+      991.98: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1190: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1191: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      }
+   },
+   centerInsufficientSlides: true,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.tabs__btn-next_logos',
+      prevEl: '.swiper-button-prev.tabs__btn-prev_logos'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   preventClicks: true,
+   simulateTouch: true,
+   touchRatio: 1,
+   grabCursor: true,
+   // loop: true,
+   // loopedSlides: 3,
+   cssMode: true,
+});
+
+let otherTabsSwiper = new Swiper('.tabs__other-slider', {
+   breakpoints: {
+      575.98: {
+         slidesPerView: 1,
+         spaceBetween: 0,
+         // loop: true,
+         // loopedSlides: 1
+      },
+      767.98: {
+         slidesPerView: 2,
+         spaceBetween: 0,
+         // loopedSlides: 2
+      },
+      991.98: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1190: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      },
+      1191: {
+         slidesPerView: 3,
+         spaceBetween: 0
+      }
+   },
+   centerInsufficientSlides: true,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.tabs__btn-next_other',
+      prevEl: '.swiper-button-prev.tabs__btn-prev_other'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   preventClicks: true,
+   simulateTouch: true,
+   touchRatio: 1,
+   grabCursor: true,
+   // loop: true,
+   // loopedSlides: 3,
+   cssMode: true,
+});

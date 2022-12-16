@@ -76,7 +76,8 @@ function init() {
 
 ymaps.ready(init);
 
-// попапы
+/*  попапы  */
+
 const popupLinks = document.querySelectorAll('.popup-link');
 // коллекция форм, при оправке которых открывается попап
 const submitForms = document.querySelectorAll('#free-project, #cost-composition, #more-questions');
@@ -218,3 +219,36 @@ function bodyUnlock() {
       unlock = true;
    }, timeout);
 }
+
+/*  табы  */
+
+document.addEventListener('DOMContentLoaded', () => {
+   const tabs = document.querySelector('.tabs');
+   const tabsBtn = document.querySelectorAll('.tabs__btn');
+   const tabsContent = document.querySelectorAll('.tabs__body');
+
+   if (tabs) {
+      // отслеживаем клик на табах
+      tabs.addEventListener('click', (e) => {
+         if (e.target.classList.contains('tabs__btn')) {
+            // при клике на кнопку записываем её дата-атрибут
+            const tabsPath = e.target.dataset.tabsPath;
+            // 
+            tabsHandler(tabsPath);
+         }
+      });
+   }
+
+   const tabsHandler = (path) => {
+      // удаляем активный класс у всех элементов
+      tabsBtn.forEach(el => { el.classList.remove('tabs__btn_active') });
+      // к текущей кнопке добавляем активный класс
+      document.querySelector(`[data-tabs-path="${path}"]`).classList.add('tabs__btn_active');
+
+      // удаляем активный класс у всех элементов
+      tabsContent.forEach(el => { el.classList.remove('tabs__body_active') });
+      // к текущему контенту добавляем активный класс
+      document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__body_active');
+   };
+});
+
