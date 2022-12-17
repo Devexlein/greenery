@@ -233,18 +233,17 @@ document.addEventListener('DOMContentLoaded', () => {
          if (e.target.classList.contains('tabs__btn')) {
             // при клике на кнопку записываем её дата-атрибут
             const tabsPath = e.target.dataset.tabsPath;
-            // 
+            // удаляем активный класс у всех элементов
+            tabsBtn.forEach(el => { el.classList.remove('tabs__btn_active') });
+            // к текущей кнопке добавляем активный класс
+            document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('tabs__btn_active');
+            // вызываем функцию переключения контента
             tabsHandler(tabsPath);
          }
       });
    }
 
    const tabsHandler = (path) => {
-      // удаляем активный класс у всех элементов
-      tabsBtn.forEach(el => { el.classList.remove('tabs__btn_active') });
-      // к текущей кнопке добавляем активный класс
-      document.querySelector(`[data-tabs-path="${path}"]`).classList.add('tabs__btn_active');
-
       // удаляем активный класс у всех элементов
       tabsContent.forEach(el => { el.classList.remove('tabs__body_active') });
       // к текущему контенту добавляем активный класс

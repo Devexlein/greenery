@@ -774,10 +774,15 @@ textarea:focus:-ms-input-placeholder {
    background-color: rgba(238, 254, 238, 0.9);
 }
 
+.popup-feedback__slider {
+   min-width: 0;
+}
+
 .popup-feedback__image img {
    max-width: 95%;
-   max-height: 75vh;
+   max-height: 90vh;
 }
+
 
 .popup-feedback__btn-prev,
 .popup-feedback__btn-next {
@@ -2094,6 +2099,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .tabs__body {
+   min-width: 0;
    height: 525px;
    position: relative;
    border: 3px solid #44775F;
