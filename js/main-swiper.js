@@ -29,6 +29,9 @@ let paintingsTabsSwiper = new Swiper('.tabs__paintings-slider', {
    },
    centerInsufficientSlides: true,
    watchOverflow: true,
+   autoplay: {
+      delay: 2000,
+   },
    navigation: {
       nextEl: '.swiper-button-next.tabs__btn-next_paintings',
       prevEl: '.swiper-button-prev.tabs__btn-prev_paintings'
@@ -231,7 +234,7 @@ let feedbackSwiper = new Swiper('.feedback__slider', {
          spaceBetween: 100,
       }
    },
-   centerInsufficientSlides: true,
+   // centerInsufficientSlides: true,
    watchOverflow: true,
    navigation: {
       nextEl: '.swiper-button-next.feedback__btn-next',
@@ -253,10 +256,18 @@ let feedbackSwiper = new Swiper('.feedback__slider', {
    loopedSlides: 3,
    slideToClickedSlide: true,
    cssMode: true,
+   preloadImages: false,
+   lazy: {
+      loadOnTransitionStart: true,
+      loadPrevNext: false
+   },
+   watchSlidesProgress: true,
+   watchSlidesVisibility: true
 });
 
 let popupFeedbackSwiper = new Swiper('.popup-feedback__slider', {
    slidesPerView: 3,
+   centeredSlides: true,
    effect: 'coverflow',
 
    coverflowEffect: {
@@ -375,9 +386,15 @@ let popupFeedbackSwiper = new Swiper('.popup-feedback__slider', {
    simulateTouch: true,
    touchRatio: 2,
    grabCursor: true,
-
-   loop: true,
-   loopedSlides: 3,
+   preloadImages: false,
+   lazy: {
+      loadOnTransitionStart: true,
+      loadPrevNext: false
+   },
+   watchSlidesProgress: true,
+   watchSlidesVisibility: true
+   // loop: true,
+   // loopedSlides: 3,
 });
 
 // customers-section
