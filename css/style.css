@@ -774,12 +774,13 @@ textarea:focus:-ms-input-placeholder {
    background-color: rgba(238, 254, 238, 0.9);
 }
 
-.popup-feedback__slider {
+.popup-feedback__slider,
+.feedback__slider {
    min-width: 0;
 }
 
 .popup-feedback__image img {
-   max-width: 95%;
+   max-width: 100%;
    max-height: 90vh;
 }
 
@@ -792,7 +793,7 @@ textarea:focus:-ms-input-placeholder {
    border-top: 3px solid #E7B962;
    border-right: 3px solid #E7B962;
    position: absolute;
-   top: calc(50% - 12.5px);
+   top: calc(55% - 12.5px);
 }
 
 .popup-feedback__btn-prev {
@@ -1313,6 +1314,18 @@ textarea:focus:-ms-input-placeholder {
    .swiper-button-next {
       font-size: 16px;
    }
+
+   .popup-feedback__btn-prev {
+      left: 5%;
+   }
+
+   .popup-feedback__btn-next {
+      right: 5%;
+   }
+
+   .popup__content_image {
+      padding: 50px 30px 20px;
+   }
 }
 
 @media (max-width: 500.98px) {
@@ -1407,12 +1420,12 @@ textarea:focus:-ms-input-placeholder {
       border: 1px solid #EDF1F4;
    }
 
-   .popup-feedback__btn-prev {
-      left: 5%;
+   .popup__content_image {
+      padding: 30px 30px 20px;
    }
 
-   .popup-feedback__btn-next {
-      right: 5%;
+   .popup-feedback__image img {
+      max-height: 100vh;
    }
 }
 

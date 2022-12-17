@@ -228,7 +228,7 @@ let feedbackSwiper = new Swiper('.feedback__slider', {
       },
       1191: {
          slidesPerView: 3,
-         spaceBetween: 100
+         spaceBetween: 100,
       }
    },
    centerInsufficientSlides: true,
@@ -251,22 +251,113 @@ let feedbackSwiper = new Swiper('.feedback__slider', {
    grabCursor: true,
    loop: true,
    loopedSlides: 3,
-   cssMode: true,
    slideToClickedSlide: true,
+   cssMode: true,
 });
 
 let popupFeedbackSwiper = new Swiper('.popup-feedback__slider', {
-   // cssMode: true,
    slidesPerView: 3,
    effect: 'coverflow',
 
    coverflowEffect: {
       depth: 30,
-      rotate: 30,
-      stretch: 80,
+      rotate: 40,
+      stretch: 30,
       slideShadows: true,
-      scale: 0.7,
-      // modifier: 2,
+      scale: 0.6
+   },
+   breakpoints: {
+      375.98: {
+         slidesPerView: 3,
+         spaceBetween: 0,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 60,
+            rotate: 40,
+            stretch: 40,
+            slideShadows: true,
+            scale: 0.7
+         },
+      },
+      575.98: {
+         slidesPerView: 3,
+         spaceBetween: 0,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 80,
+            rotate: 40,
+            stretch: 30,
+            slideShadows: true,
+            scale: 0.7
+         },
+      },
+      767.98: {
+         slidesPerView: 3,
+         spaceBetween: 0,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 20,
+            rotate: 30,
+            stretch: 50,
+            slideShadows: true,
+            scale: 0.7
+         },
+      },
+      991.98: {
+         slidesPerView: 3,
+         spaceBetween: 30,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 40,
+            rotate: 40,
+            stretch: 75,
+            slideShadows: true,
+            scale: 0.7
+         },
+      },
+      1190: {
+         slidesPerView: 3,
+         spaceBetween: 30,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 70,
+            rotate: 30,
+            stretch: 140,
+            slideShadows: true,
+            scale: 0.75,
+         },
+      },
+      1201: {
+         slidesPerView: 3,
+         spaceBetween: 40,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 100,
+            rotate: 30,
+            stretch: 140,
+            slideShadows: true,
+            scale: 0.8,
+         },
+      },
+      1401: {
+         slidesPerView: 3,
+         spaceBetween: 50,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 160,
+            rotate: 40,
+            stretch: 170,
+            slideShadows: true,
+            scale: 0.8,
+         },
+      }
    },
    watchOverflow: true,
    navigation: {
