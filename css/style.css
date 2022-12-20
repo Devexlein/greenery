@@ -2089,6 +2089,7 @@ textarea:focus:-ms-input-placeholder {
 
 .tabs__btn {
    font-size: 35px;
+   color: #17291B;
    text-align: center;
    line-height: 80px;
    width: 220px;
@@ -2488,6 +2489,17 @@ textarea:focus:-ms-input-placeholder {
 .products__item {
    flex: 0 1 33.333%;
    padding: 0px 20px 0px 20px;
+}
+
+.products__item .product-box__image {
+   border: none;
+   width: 240px;
+}
+
+.products__item .product-box__image img {
+
+   object-fit: contain;
+   max-width: 100%;
 }
 
 .products__item .product-box__title {
@@ -3303,6 +3315,10 @@ textarea:focus:-ms-input-placeholder {
 
 .footer__logo a {
    padding-top: 10px;
+}
+
+.logo__description {
+   color: #17291B;
 }
 
 @media (max-width: 1190px) {

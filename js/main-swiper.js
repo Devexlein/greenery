@@ -50,8 +50,9 @@ let paintingsTabsSwiper = new Swiper('.tabs__paintings-slider', {
    grabCursor: true,
    // loop: true,
    // loopedSlides: 3,
-   // cssMode: true,
-   slideToClickedSlide: true,
+   observer: true,
+   observeParents: true,
+   observeSlideChildren: true
 });
 
 let wallsTabsSwiper = new Swiper('.tabs__walls-slider', {
@@ -100,8 +101,9 @@ let wallsTabsSwiper = new Swiper('.tabs__walls-slider', {
    grabCursor: true,
    // loop: true,
    // loopedSlides: 3,
-   // cssMode: true,
-   slideToClickedSlide: true,
+   observer: true,
+   observeParents: true,
+   observeSlideChildren: true
 });
 
 let logosTabsSwiper = new Swiper('.tabs__logos-slider', {
@@ -150,8 +152,9 @@ let logosTabsSwiper = new Swiper('.tabs__logos-slider', {
    grabCursor: true,
    // loop: true,
    // loopedSlides: 3,
-   // cssMode: true,
-   slideToClickedSlide: true,
+   observer: true,
+   observeParents: true,
+   observeSlideChildren: true
 });
 
 let otherTabsSwiper = new Swiper('.tabs__other-slider', {
@@ -194,14 +197,15 @@ let otherTabsSwiper = new Swiper('.tabs__other-slider', {
    mousewheel: {
       sensitivity: 1,
    },
-   // cssMode: true,
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
    grabCursor: true,
    // loop: true,
    // loopedSlides: 3,
-   slideToClickedSlide: true,
+   observer: true,
+   observeParents: true,
+   observeSlideChildren: true
 });
 
 // feedback-section
@@ -234,7 +238,6 @@ let feedbackSwiper = new Swiper('.feedback__slider', {
          spaceBetween: 100,
       }
    },
-   // centerInsufficientSlides: true,
    watchOverflow: true,
    navigation: {
       nextEl: '.swiper-button-next.feedback__btn-next',
