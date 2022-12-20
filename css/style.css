@@ -2100,6 +2100,10 @@ textarea:focus:-ms-input-placeholder {
    transition: all 0.3s ease-in-out;
 }
 
+.tabs__btn button {
+   color: #17291B;
+}
+
 .tabs__btn:hover {
    background: #FDFFFE;
 }
@@ -3350,7 +3354,7 @@ textarea:focus:-ms-input-placeholder {
    padding-top: 10px;
 }
 
-.logo__description {
+.logo__description p {
    color: #17291B;
 }
 
