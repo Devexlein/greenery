@@ -2088,12 +2088,12 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .tabs__btn {
-   font-size: 35px;
+   font-size: 30px;
    color: #17291B;
    text-align: center;
-   line-height: 80px;
+   line-height: 65px;
    width: 220px;
-   height: 80px;
+   height: 65px;
    border-width: 3px 3px 0px 3px;
    border-style: solid;
    border-color: #44775F;
@@ -2159,9 +2159,9 @@ textarea:focus:-ms-input-placeholder {
 @media (max-width: 1190px) {
    .tabs__btn {
       font-size: 25px;
-      line-height: 60px;
+      line-height: 50px;
       width: 180px;
-      height: 60px;
+      height: 50px;
    }
 
    .tabs__btn-prev {
