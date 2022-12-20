@@ -208,6 +208,41 @@ let otherTabsSwiper = new Swiper('.tabs__other-slider', {
    observeSlideChildren: true
 });
 
+// products-section
+let productsSwiper = new Swiper('.products__slider', {
+   slidesPerView: 1,
+   spaceBetween: 0,
+   breakpoints: {
+      991.98: {
+         slidesPerView: 3,
+         spaceBetween: 75
+      },
+      1200: {
+         slidesPerView: 3,
+         spaceBetween: 100
+      }
+   },
+   centerInsufficientSlides: true,
+   watchOverflow: true,
+   navigation: {
+      nextEl: '.swiper-button-next.products__btn-next',
+      prevEl: '.swiper-button-prev.products__btn-prev'
+   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+   mousewheel: {
+      sensitivity: 1,
+   },
+   preventClicks: true,
+   simulateTouch: true,
+   touchRatio: 1,
+   grabCursor: true
+});
+
+
 // feedback-section
 let feedbackSwiper = new Swiper('.feedback__slider', {
    slidesPerView: 3,
