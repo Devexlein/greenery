@@ -174,8 +174,13 @@ body.lock {
 .logo__description {
    font-size: 20px;
    line-height: 1.2;
+   color: #17291B;
    max-width: 300px;
    align-self: center;
+}
+
+.logo__description span {
+   color: #17291B;
 }
 
 .logo__privacy-policy {
@@ -3354,9 +3359,6 @@ textarea:focus:-ms-input-placeholder {
    padding-top: 10px;
 }
 
-.logo__description p {
-   color: #17291B;
-}
 
 @media (max-width: 1190px) {
 
