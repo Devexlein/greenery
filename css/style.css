@@ -180,7 +180,7 @@ body.lock {
 }
 
 .logo__description span {
-   color: #17291B;
+   color: #17291B !important;
 }
 
 .logo__privacy-policy {
