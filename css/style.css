@@ -3191,7 +3191,12 @@ textarea:focus:-ms-input-placeholder {
    position: relative;
    border: 3px solid #44775F;
    border-radius: 15px;
+   z-index: 1;
    overflow: hidden !important;
+}
+
+.map__image {
+   z-index: 0;
 }
 
 .showroom__form {
