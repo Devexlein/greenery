@@ -180,6 +180,7 @@ body.lock {
 }
 
 .logo__description span,
+.logo__description p span,
 .logo__description p a {
    color: #17291B !important;
 }
