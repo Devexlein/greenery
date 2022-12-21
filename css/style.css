@@ -3188,6 +3188,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .showroom__map {
+   position: relative;
    border: 3px solid #44775F;
    border-radius: 15px;
    overflow: hidden !important;
