@@ -436,7 +436,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .checkbox__item {
-   flex: 0 1 315px;
+   flex: 0 1 310px;
    max-width: fit-content;
 }
 
@@ -446,7 +446,7 @@ textarea:focus:-ms-input-placeholder {
 
 .checkbox__label {
    display: flex;
-   font-size: 25px;
+   font-size: 22px;
    line-height: 110%;
    color: #17291B;
    transition: color 0.3s ease;
@@ -886,7 +886,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox__label {
-      font-size: 22px;
+      font-size: 20px;
    }
 
    .form-box__wrap {
@@ -960,7 +960,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox__item {
-      flex: 0 1 240px;
+      flex: 0 1 230px;
    }
 
    .checkbox__item_4 {
@@ -968,7 +968,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox__label-text {
-      font-size: 18px;
+      font-size: 16px;
    }
 
    .checkbox__custom-input {
@@ -2093,12 +2093,12 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .tabs__btn {
-   font-size: 30px;
+   font-size: 25px;
    color: #17291B;
    text-align: center;
-   line-height: 65px;
+   line-height: 55px;
    width: 220px;
-   height: 65px;
+   height: 55px;
    border-width: 3px 3px 0px 3px;
    border-style: solid;
    border-color: #44775F;
@@ -2167,7 +2167,7 @@ textarea:focus:-ms-input-placeholder {
 
 @media (max-width: 1190px) {
    .tabs__btn {
-      font-size: 25px;
+      font-size: 23px;
       line-height: 50px;
       width: 180px;
       height: 50px;
@@ -2217,10 +2217,10 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .tabs__btn {
-      font-size: 22px;
-      line-height: 50px;
+      font-size: 20px;
+      line-height: 40px;
       width: 140px;
-      height: 50px;
+      height: 40px;
    }
 
    .tabs__btn-prev {
@@ -2246,10 +2246,10 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .tabs__btn {
-      font-size: 20px;
-      line-height: 40px;
-      width: 120px;
-      height: 40px;
+      font-size: 18px;
+      line-height: 30px;
+      width: 110px;
+      height: 30px;
    }
 
    .tabs__card {
