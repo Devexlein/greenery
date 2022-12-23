@@ -121,7 +121,7 @@ ymaps.ready(init);
 /*  попапы  */
 const popupLinks = document.querySelectorAll('.popup-link');
 // коллекция форм, при оправке которых открывается попап
-const submitForms = document.querySelectorAll('#free-project, #cost-composition, #more-questions');
+const submitForms = document.querySelectorAll('#free-project, #cost-composition, #more-questions, #application');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 

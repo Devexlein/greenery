@@ -793,7 +793,7 @@
                            <div class="product-box__body">
                               <h3 class="product-box__title">Cтены</h3>
                            </div>
-                           <a data-goto=".free-project" href="#" class="product-box__link button">от 5500₽ за м²</a>
+                           <a href="#application-popup" class="product-box__link button popup-link">от 5500₽ за м²</a>
                         </div>
                      </div>
                      <div class="products__slide swiper-slide">
@@ -846,7 +846,7 @@
                            <div class="product-box__body">
                               <h3 class="product-box__title">Фотокартины <span>и фотопанно</span></h3>
                            </div>
-                           <a data-goto=".free-project" href="#" class="product-box__link button">от 7000₽ за м²</a>
+                           <a href="#application-popup" class="product-box__link button popup-link">от 7000₽ за м²</a>
                         </div>
                      </div>
                      <div class="products__slide swiper-slide">
@@ -887,7 +887,7 @@
                               <h3 class="product-box__title">Логотипы <span>и вывески</spa>
                               </h3>
                            </div>
-                           <a data-goto=".free-project" href="#" class="product-box__link button">от 9000₽ за м²</a>
+                           <a href="#application-popup" class="product-box__link button popup-link">от 9000₽ за м²</a>
                         </div>
                      </div>
                   </div>
@@ -1332,6 +1332,30 @@
                      на сайт</a>
                </div>
                <a data-goto=".price__form" href="#" class="popup__return-back close-popup">Вернуться на сайт</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="popup" id="application-popup">
+         <div class="popup__container">
+            <div class="popup__content">
+               <div id="application__form" class="application__form form-box">
+                  <h3 class="form-box__title">Заявка</h3>
+                  <div class="form-box__body">
+                     <form id="application" data-idtel="tel3" class="form-box__form" method="POST" action="#">
+                        <div class="form-box__input form-box__input_changing">
+                           <input class="form-box__input-large" type="text" placeholder="Как к Вам обращаться?"
+                              name="name">
+                           <input class="form-box__input-small" type="text" placeholder="Ваше имя" name="name">
+                        </div>
+                        <div class="form-box__input">
+                           <input id="tel3" type="tel" class="form-box__phone" placeholder="Ваш телефон" name="tel"
+                              required>
+                        </div>
+                        <button type="submit" class="form-box__button button">оставить заявку</button>
+                     </form>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
