@@ -2654,7 +2654,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .products__item {
-      height: 415px;
+      height: 425px;
    }
 }
 
@@ -2689,7 +2689,7 @@ textarea:focus:-ms-input-placeholder {
 
 @media (max-width: 400.98px) {
    .products__item {
-      height: 380px;
+      height: 395px;
    }
 
    .products__btn-prev {

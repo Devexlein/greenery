@@ -71,8 +71,6 @@ if (anchors.length > 0) {
          const gotoBlock = document.querySelector(anchor.dataset.goto);
          // учитываем высоту шапки
          const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.header').offsetHeight + 170;
-         // console.log(gotoBlock);
-         // console.log(gotoBlockValue);
 
          if (iconMenu.classList.contains('active')) {
             document.body.classList.remove('lock');
