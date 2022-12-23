@@ -117,8 +117,8 @@ function init() {
 
 ymaps.ready(init);
 
-/*  попапы  */
 
+/*  попапы  */
 const popupLinks = document.querySelectorAll('.popup-link');
 // коллекция форм, при оправке которых открывается попап
 const submitForms = document.querySelectorAll('#free-project, #cost-composition, #more-questions');
@@ -186,8 +186,13 @@ if (submitForms.length > 0) {
    for (let i = 0; i < submitForms.length; i++) {
       const submitForm = submitForms[i];
       submitForm.addEventListener("submit", function (e) {
-         popupOpen(successfullyPopup);
-         e.preventDefault();
+         if (ValidPhone(document.getElementById(submitForm.getAttribute('data-idtel')).value)) {
+            popupOpen(successfullyPopup);
+            e.preventDefault();
+         } else {
+            console.log('Проверьте номер телефона: состоит из "+7" И 10 цифр');
+            e.preventDefault();
+         };
       });
    }
 }

@@ -97,15 +97,15 @@
                      Поделитесь с дизайнерами своими пожеланиями и получите идеальный проект бесплатно
                   </h4>
                   <div class="form-box__body">
-                     <form id="free-project" class="form-box__form" method="" action="#"
-                        onsubmit="if (ValidPhone(document.getElementById('tel').value)) sendform();">
+                     <form id="free-project" data-idtel="tel" class="form-box__form" method="POST" action="#">
                         <div class="form-box__input form-box__input_changing">
                            <input class="form-box__input-large" type="text" placeholder="Как к Вам обращаться?"
                               name="name">
                            <input class="form-box__input-small" type="text" placeholder="Ваше имя" name="name">
                         </div>
                         <div class="form-box__input">
-                           <input type="tel" class="form-box__phone" placeholder="Ваш телефон" name="tel" required>
+                           <input id="tel" type="tel" class="form-box__phone" placeholder="Ваш телефон" name="tel"
+                              required>
                         </div>
                         <button type="submit" class="form-box__button button">Хочу увидеть</button>
                      </form>
@@ -682,8 +682,7 @@
                   <h4 class="form-box__subtitle">
                      Что хотите видеть в композиции? Можно выбрать несколько вариантов.
                   </h4>
-                  <form id="cost-composition" class="form-box__form" method="" action="#"
-                     onsubmit="if (ValidPhone(document.getElementById('tel1').value)) sendform1();">
+                  <form id="cost-composition" data-idtel="tel1" class="form-box__form" method="POST" action="#">
                      <div class="form-box__checkbox checkbox">
                         <div class="checkbox__item checkbox__item_1">
                            <label class="checkbox__label">
@@ -1249,8 +1248,7 @@
                   <h4 class="form-box__subtitle">
                      Приезжайте в наш шоурум или расскажите о задаче нашим менеджерам
                   </h4>
-                  <form id="more-questions" class="form-box__form" method="" action="#"
-                     onsubmit="if (ValidPhone(document.getElementById('tel2').value)) sendform2();">
+                  <form id="more-questions" data-idtel="tel2" class="form-box__form" method="POST" action="#">
                      <div class="form-box__input">
                         <input type="text" placeholder="Как к Вам обращаться?" name="name">
                      </div>
