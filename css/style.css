@@ -431,17 +431,21 @@ textarea:focus:-ms-input-placeholder {
 
 /* --- checkbox ---- */
 .checkbox {
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1.5fr 4fr 2fr 3fr;
+   gap: 6%;
+
+   /* display: flex;
+   justify-content: space-between; */
 }
 
 .checkbox__item {
-   flex: 0 1 310px;
-   max-width: fit-content;
+   /* flex: 0 1 310px;
+   max-width: fit-content; */
 }
 
 .checkbox__item_4 {
-   flex: 0 1 240px;
+   /* flex: 0 1 240px; */
 }
 
 .checkbox__label {
@@ -902,11 +906,11 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox__item {
-      flex: 0 1 280px;
+      /* flex: 0 1 280px; */
    }
 
    .checkbox__item_4 {
-      flex: 0 1 220px;
+      /* flex: 0 1 220px; */
    }
 
    .checkbox__label {
@@ -997,11 +1001,11 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox__item {
-      flex: 0 1 230px;
+      /* flex: 0 1 230px; */
    }
 
    .checkbox__item_4 {
-      flex: 0 1 180px;
+      /* flex: 0 1 180px; */
    }
 
    .checkbox__label-text {
@@ -1133,17 +1137,23 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox {
-      flex-wrap: wrap;
-      justify-content: space-between;
+      grid-template-columns: 1fr 4fr;
+      gap: 15px 5px;
+      /* flex-wrap: wrap;
+      justify-content: space-between; */
+   }
+
+   .checkbox__item:nth-child(even) {
+      justify-self: end;
    }
 
    .checkbox__item,
    .checkbox__item_4 {
-      flex: 1 1 auto;
+      /* flex: 1 1 auto; */
    }
 
    .checkbox__item:not(:last-child) {
-      margin-bottom: 15px;
+      /* margin-bottom: 15px; */
    }
 
    .checkbox__label-text {
@@ -1416,16 +1426,21 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox {
-      flex-wrap: wrap;
-      justify-content: space-between;
+      gap: 0px;
+      /* flex-wrap: wrap;
+      justify-content: space-between; */
+   }
+
+   .checkbox__item:nth-child(even) {
+      justify-self: start;
    }
 
    .checkbox__item {
-      flex: 0 1 325px;
+      /* flex: 0 1 325px; */
    }
 
    .checkbox__item_4 {
-      flex: 0 1 300px;
+      /* flex: 0 1 300px; */
    }
 
    .checkbox__item:not(:last-child) {
@@ -1454,14 +1469,17 @@ textarea:focus:-ms-input-placeholder {
 
    .checkbox__item_2 {
       order: 3;
+      grid-column: span 2;
    }
 
    .checkbox__item_3 {
       order: 2;
+      justify-self: end;
    }
 
    .checkbox__item_4 {
       order: 4;
+      grid-column: span 2;
    }
 
    .popup__title {
@@ -3380,6 +3398,10 @@ textarea:focus:-ms-input-placeholder {
 
 .showroom__form .form-box__checkbox {
    max-width: 270px;
+}
+
+.showroom__form label {
+   grid-column: span 4;
 }
 
 .showroom__form .checkbox__custom-input {
