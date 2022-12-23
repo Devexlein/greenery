@@ -1776,8 +1776,8 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .started__blur {
-   background: rgba(23, 41, 27, 0.35);
-   backdrop-filter: blur(2px);
+   /* background: rgba(23, 41, 27, 0.35); */
+   /* backdrop-filter: blur(2px); */
    border-radius: 15px;
    width: 100%;
    padding: 9% 4%;
