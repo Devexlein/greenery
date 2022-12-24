@@ -183,15 +183,19 @@ function popupClose(popupActive, doUnlock = true) {
 // вызов попапа успешной отправки формы
 if (submitForms.length > 0) {
    const successfullyPopup = document.getElementById('successfully-popup');
+
+
    for (let i = 0; i < submitForms.length; i++) {
       const submitForm = submitForms[i];
+
       submitForm.addEventListener("submit", function (e) {
+         e.preventDefault();
+         const message = submitForm.querySelector('.form-box__message');
          if (ValidPhone(document.getElementById(submitForm.getAttribute('data-idtel')).value)) {
             popupOpen(successfullyPopup);
-            e.preventDefault();
+            message.classList.remove('active');
          } else {
-            console.log('Проверьте номер телефона: состоит из "+7" И 10 цифр');
-            e.preventDefault();
+            message.classList.add('active');
          };
       });
    }

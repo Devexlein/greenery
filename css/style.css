@@ -267,6 +267,7 @@ body.lock {
 
 /* ------ forms ------------------- */
 .form-box {
+   position: relative;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -275,8 +276,29 @@ body.lock {
    border-radius: 15px;
    text-align: center;
    margin: 0 auto;
-   padding: 3.5% 1%;
-   /* 0.85% */
+   padding: 2.58% 1%;
+}
+
+.form-box__message.active {
+   visibility: visible;
+}
+
+.form-box__message {
+   position: absolute;
+   bottom: 15px;
+   font-size: 20px;
+   line-height: 1.2;
+   color: #FF6405;
+   visibility: hidden;
+}
+
+.form-box__message span {
+   display: inline-block;
+}
+
+.showroom__form .form-box__message {
+   bottom: 5px;
+   font-size: 14px;
 }
 
 .form-box__title {
@@ -887,6 +909,10 @@ textarea:focus:-ms-input-placeholder {
       font-size: 16px;
    }
 
+   .form-box__message {
+      bottom: 10px;
+   }
+
    .form-box__title {
       font-size: 26px;
    }
@@ -971,6 +997,10 @@ textarea:focus:-ms-input-placeholder {
 
    .title_slider {
       font-size: 28px;
+   }
+
+   .form-box__message {
+      font-size: 16px;
    }
 
    .form-box__title {
@@ -1101,6 +1131,15 @@ textarea:focus:-ms-input-placeholder {
 
    .title_slider {
       font-size: 26px;
+   }
+
+   .form-box__message {
+      font-size: 12px;
+   }
+
+   .showroom__form .form-box__message {
+      font-size: 12px;
+      bottom: 0;
    }
 
    .form-box__title,
@@ -1285,6 +1324,14 @@ textarea:focus:-ms-input-placeholder {
       border-radius: 5px;
    }
 
+   .form-box__message {
+      bottom: 5px;
+   }
+
+   .application__form .form-box__message {
+      bottom: 0;
+   }
+
    .form-box__title {
       font-weight: 600;
    }
@@ -1324,6 +1371,12 @@ textarea:focus:-ms-input-placeholder {
    textarea,
    .button {
       border-radius: 5px;
+   }
+
+   input[type="tel"],
+   input[type="text"],
+   textarea {
+      font-size: 16px;
    }
 
    .checkbox__custom-input {
@@ -1421,8 +1474,13 @@ textarea:focus:-ms-input-placeholder {
 
    .form-box__form,
    .form-box__input_wide,
-   .form-box__wrap {
+   .form-box__wrap,
+   .form-box__message {
       width: 380px;
+   }
+
+   .form-box__message {
+      bottom: 0;
    }
 
    .checkbox {
@@ -1524,6 +1582,16 @@ textarea:focus:-ms-input-placeholder {
       line-height: 1.1;
    }
 
+   .form-box,
+   .showroom__form.form-box {
+      padding-bottom: 3%;
+   }
+
+   .form-box__message {
+      width: 100%;
+      left: 0;
+   }
+
    .form-box__title {
       font-size: 20px;
       margin-bottom: 10px;
@@ -1531,6 +1599,10 @@ textarea:focus:-ms-input-placeholder {
 
    .application__form .form-box__title {
       font-size: 22px;
+   }
+
+   .price__form .form-box__phone {
+      font-size: 14px;
    }
 
    .popup__title {
