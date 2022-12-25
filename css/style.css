@@ -296,11 +296,6 @@ body.lock {
    display: inline-block;
 }
 
-.showroom__form .form-box__message {
-   bottom: 5px;
-   font-size: 14px;
-}
-
 .form-box__title {
    font-size: 30px;
    font-weight: 700;
@@ -456,19 +451,18 @@ textarea:focus:-ms-input-placeholder {
    display: grid;
    grid-template-columns: 1.5fr 4fr 2fr 3fr;
    gap: 6%;
-
    /* display: flex;
    justify-content: space-between; */
 }
 
-.checkbox__item {
-   /* flex: 0 1 310px;
-   max-width: fit-content; */
-}
+/* .checkbox__item {
+   flex: 0 1 310px;
+   max-width: fit-content;
+} */
 
-.checkbox__item_4 {
-   /* flex: 0 1 240px; */
-}
+/* .checkbox__item_4 {
+   flex: 0 1 240px;
+} */
 
 .checkbox__label {
    display: flex;
@@ -931,13 +925,13 @@ textarea:focus:-ms-input-placeholder {
       margin: 0px -15px;
    }
 
-   .checkbox__item {
-      /* flex: 0 1 280px; */
-   }
+   /* .checkbox__item {
+      flex: 0 1 280px;
+   } */
 
-   .checkbox__item_4 {
-      /* flex: 0 1 220px; */
-   }
+   /* .checkbox__item_4 {
+      flex: 0 1 220px;
+   } */
 
    .checkbox__label {
       font-size: 20px;
@@ -1030,13 +1024,13 @@ textarea:focus:-ms-input-placeholder {
       width: 600px;
    }
 
-   .checkbox__item {
-      /* flex: 0 1 230px; */
-   }
+   /* .checkbox__item {
+      flex: 0 1 230px;
+   } */
 
-   .checkbox__item_4 {
-      /* flex: 0 1 180px; */
-   }
+   /* .checkbox__item_4 {
+      flex: 0 1 180px;
+   } */
 
    .checkbox__label-text {
       font-size: 16px;
@@ -1137,11 +1131,6 @@ textarea:focus:-ms-input-placeholder {
       font-size: 12px;
    }
 
-   .showroom__form .form-box__message {
-      font-size: 12px;
-      bottom: 0;
-   }
-
    .form-box__title,
    .application__form .form-box__title {
       font-size: 26px;
@@ -1186,14 +1175,14 @@ textarea:focus:-ms-input-placeholder {
       justify-self: end;
    }
 
-   .checkbox__item,
+   /* .checkbox__item,
    .checkbox__item_4 {
-      /* flex: 1 1 auto; */
-   }
+      flex: 1 1 auto;
+   } */
 
-   .checkbox__item:not(:last-child) {
-      /* margin-bottom: 15px; */
-   }
+   /* .checkbox__item:not(:last-child) {
+      margin-bottom: 15px;
+   } */
 
    .checkbox__label-text {
       font-size: 18px;
@@ -1493,13 +1482,13 @@ textarea:focus:-ms-input-placeholder {
       justify-self: start;
    }
 
-   .checkbox__item {
-      /* flex: 0 1 325px; */
-   }
+   /* .checkbox__item {
+      flex: 0 1 325px;
+   } */
 
-   .checkbox__item_4 {
-      /* flex: 0 1 300px; */
-   }
+   /* .checkbox__item_4 {
+      flex: 0 1 300px;
+   } */
 
    .checkbox__item:not(:last-child) {
       margin-bottom: 15px;
@@ -1599,10 +1588,6 @@ textarea:focus:-ms-input-placeholder {
 
    .application__form .form-box__title {
       font-size: 22px;
-   }
-
-   .price__form .form-box__phone {
-      font-size: 14px;
    }
 
    .popup__title {
@@ -2585,6 +2570,10 @@ textarea:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 400.98px) {
+   .price__form .form-box__phone {
+      font-size: 14px;
+   }
+
    .price__form .form-box__subtitle {
       font-size: 14px;
    }
@@ -3049,7 +3038,6 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /*  slide 1 */
-
 .customers__image_sber {
    grid-column: span 8;
 }
@@ -3083,7 +3071,6 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /*  slide 2 */
-
 .customers__image_ikea {
    grid-column: span 5;
    border-radius: 8px;
@@ -3129,7 +3116,6 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /*  slide 3 */
-
 .customers__image_wb {
    grid-column: span 4;
 }
@@ -3214,7 +3200,6 @@ textarea:focus:-ms-input-placeholder {
    }
 
    /*  slide 1 */
-
    .customers__image_sber {
       grid-column: span 12;
       order: 1;
@@ -3256,7 +3241,6 @@ textarea:focus:-ms-input-placeholder {
    }
 
    /*  slide 2 */
-
    .customers__image_ikea {
       grid-column: span 8;
       border-radius: 5px;
@@ -3315,7 +3299,6 @@ textarea:focus:-ms-input-placeholder {
    }
 
    /*  slide 3 */
-
    .customers__image_wb {
       grid-column: span 5;
       order: 3;
@@ -3398,7 +3381,6 @@ textarea:focus:-ms-input-placeholder {
    }
 }
 
-
 /* ------ showroom ------------------- */
 
 .showroom {
@@ -3462,6 +3444,11 @@ textarea:focus:-ms-input-placeholder {
 .showroom__form .form-box__form {
    max-width: 290px;
    justify-content: center;
+}
+
+.showroom__form .form-box__message {
+   bottom: 5px;
+   font-size: 14px;
 }
 
 .showroom__form .form-box__subtitle {
@@ -3538,6 +3525,11 @@ textarea:focus:-ms-input-placeholder {
 
    .showroom__form .form-box__input {
       width: 290px;
+   }
+
+   .showroom__form .form-box__message {
+      font-size: 12px;
+      bottom: 0;
    }
 }
 
