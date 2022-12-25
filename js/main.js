@@ -191,7 +191,9 @@ if (submitForms.length > 0) {
       submitForm.addEventListener("submit", function (e) {
          e.preventDefault();
          const message = submitForm.querySelector('.form-box__message');
-         if (ValidPhone(document.getElementById(submitForm.getAttribute('data-idtel')).value)) {
+         const userPhone = submitForm.querySelector('.form-box__phone').value;
+
+         if (ValidPhone(userPhone)) {
             popupOpen(successfullyPopup);
             message.classList.remove('active');
          } else {
