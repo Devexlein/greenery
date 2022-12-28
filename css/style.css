@@ -469,8 +469,8 @@ textarea:focus:-ms-input-placeholder {
    font-size: 22px;
    line-height: 110%;
    color: #17291B;
-   transition: color 0.3s ease;
    -webkit-transition: color 0.3s ease;
+   transition: color 0.3s ease;
 }
 
 .checkbox__label-text {
@@ -502,6 +502,10 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .checkbox__custom-input {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   appearance: none;
    flex: 0 0 25px;
    align-self: flex-start;
    position: relative;
@@ -524,9 +528,10 @@ textarea:focus:-ms-input-placeholder {
    position: absolute;
    left: 50%;
    top: 50%;
+   -webkit-transform: translate(-50%, -50%) scale(0);
    transform: translate(-50%, -50%) scale(0);
-   transition: 0.2s ease-in;
    -webkit-transition: 0.2s ease-in;
+   transition: 0.2s ease-in;
 }
 
 .checkbox__real-input:focus+.checkbox__custom-input {
@@ -543,6 +548,7 @@ textarea:focus:-ms-input-placeholder {
 
 .checkbox__real-input:checked+.checkbox__custom-input::before {
    background-color: #17291B;
+   -webkit-transform: translate(-50%, -50%) scale(1);
    transform: translate(-50%, -50%) scale(1);
 }
 
