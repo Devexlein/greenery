@@ -337,6 +337,10 @@ body.lock {
    justify-content: space-between;
 }
 
+/* input[type="checkbox"] {
+   -webkit-appearance: none;
+} */
+
 input[type="tel"],
 input[type="text"],
 textarea {
@@ -469,8 +473,8 @@ textarea:focus:-ms-input-placeholder {
    font-size: 22px;
    line-height: 110%;
    color: #17291B;
-   -webkit-transition: color 0.3s ease;
-   transition: color 0.3s ease;
+   -webkit-transition: color 0.3s ease 0s;
+   transition: color 0.3s ease 0s;
 }
 
 .checkbox__label-text {
@@ -502,10 +506,6 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .checkbox__custom-input {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   -ms-appearance: none;
-   appearance: none;
    flex: 0 0 25px;
    align-self: flex-start;
    position: relative;
@@ -530,8 +530,8 @@ textarea:focus:-ms-input-placeholder {
    top: 50%;
    -webkit-transform: translate(-50%, -50%) scale(0);
    transform: translate(-50%, -50%) scale(0);
-   -webkit-transition: 0.2s ease-in;
-   transition: 0.2s ease-in;
+   -webkit-transition: 0.2s ease-in 0s;
+   transition: 0.2s ease-in 0s;
 }
 
 .checkbox__real-input:focus+.checkbox__custom-input {
@@ -1836,10 +1836,11 @@ textarea:focus:-ms-input-placeholder {
 
    /* menu-body */
    .header__menu {
-      border-bottom: 3px solid #44775F;
+      border: 3px solid #44775F;
+      border-top: none;
       position: fixed;
-      top: -100%;
-      right: 0;
+      top: 0;
+      left: -100%;
       width: 100%;
       border-radius: 0px 0px 15px 15px;
       background-color: #EDF4EF;
@@ -1850,7 +1851,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .header__menu.active {
-      top: 0;
+      left: 0;
    }
 
    .header__menu-list {
@@ -2264,7 +2265,7 @@ textarea:focus:-ms-input-placeholder {
 
 .tabs__btn_active {
    background: #FDFFFE;
-   pointer-events: none;
+   /* pointer-events: none; */
    transition: all 0.3s ease-in-out;
 }
 
