@@ -273,7 +273,6 @@ function bodyUnlock() {
 }
 
 /*  табы  */
-
 document.addEventListener('DOMContentLoaded', () => {
    const tabs = document.querySelector('.tabs');
    const tabsBtn = document.querySelectorAll('.tabs__btn');

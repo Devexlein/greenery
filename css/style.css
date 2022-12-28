@@ -470,6 +470,7 @@ textarea:focus:-ms-input-placeholder {
    line-height: 110%;
    color: #17291B;
    transition: color 0.3s ease;
+   -webkit-transition: color 0.3s ease;
 }
 
 .checkbox__label-text {
@@ -525,6 +526,7 @@ textarea:focus:-ms-input-placeholder {
    top: 50%;
    transform: translate(-50%, -50%) scale(0);
    transition: 0.2s ease-in;
+   -webkit-transition: 0.2s ease-in;
 }
 
 .checkbox__real-input:focus+.checkbox__custom-input {
@@ -1910,7 +1912,7 @@ textarea:focus:-ms-input-placeholder {
 .started__content {
    text-align: center;
    color: #FDFFFE;
-   background: url('../img/started/started-bg_1166x1554.jpg') center /cover no-repeat;
+   background: url('../img/started/started-bg_1120x525.jpg') center /cover no-repeat;
    border-radius: 15px;
 }
 
