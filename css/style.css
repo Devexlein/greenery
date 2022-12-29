@@ -362,6 +362,10 @@ textarea {
    resize: vertical;
 }
 
+a[href^=tel] {
+   color: inherit;
+}
+
 ::-webkit-input-placeholder {
    /* Chrome/Opera/Safari */
    color: #17291B;
@@ -454,8 +458,8 @@ textarea:focus:-ms-input-placeholder {
 .checkbox {
    display: grid;
    grid-template-columns: 1.5fr 4fr 2fr 3fr;
-   /* -webkit-column-gap: 6%; */
-   grid-gap: 6%;
+   -webkit-column-gap: 6%;
+   column-gap: 6%;
 
    /* display: flex;
    justify-content: space-between; */
