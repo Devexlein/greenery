@@ -725,6 +725,7 @@ textarea:focus:-ms-input-placeholder {
    opacity: 0;
    visibility: hidden;
    overflow-y: auto;
+   -webkit-overflow-scrolling: touch;
    overflow-x: hidden;
    transition: all 0.8s ease;
 }
@@ -1847,6 +1848,7 @@ textarea:focus:-ms-input-placeholder {
       padding: 6% 10%;
       transition: all 0.5s ease 0s;
       overflow: auto;
+      -webkit-overflow-scrolling: touch;
       z-index: 49;
    }
 
