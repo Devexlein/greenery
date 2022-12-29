@@ -454,7 +454,9 @@ textarea:focus:-ms-input-placeholder {
 .checkbox {
    display: grid;
    grid-template-columns: 1.5fr 4fr 2fr 3fr;
-   gap: 6%;
+   /* -webkit-column-gap: 6%; */
+   grid-gap: 6%;
+
    /* display: flex;
    justify-content: space-between; */
 }
@@ -1175,7 +1177,7 @@ textarea:focus:-ms-input-placeholder {
 
    .checkbox {
       grid-template-columns: 1fr 4fr;
-      gap: 15px 5px;
+      grid-gap: 15px 5px;
       /* flex-wrap: wrap;
       justify-content: space-between; */
    }
@@ -1482,7 +1484,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .checkbox {
-      gap: 0px;
+      grid-gap: 0px;
       /* flex-wrap: wrap;
       justify-content: space-between; */
    }
@@ -2094,14 +2096,14 @@ textarea:focus:-ms-input-placeholder {
 .advantages__items {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   column-gap: 25px;
+   grid-column-gap: 25px;
    justify-content: center;
 }
 
 .process__items {
    display: grid;
    grid-template-columns: repeat(auto-fill, 380px);
-   gap: 20px 10px;
+   grid-gap: 20px 10px;
    justify-content: center;
 }
 
@@ -2112,7 +2114,7 @@ textarea:focus:-ms-input-placeholder {
 @media (max-width: 1190px) {
    .process__items {
       grid-template-columns: repeat(auto-fill, 312px);
-      gap: 20px 1px;
+      grid-gap: 20px 1px;
    }
 
    .process__item:last-child .card__subtitle {
@@ -2129,12 +2131,12 @@ textarea:focus:-ms-input-placeholder {
 
    .advantages__items {
       grid-template-columns: repeat(2, 1fr);
-      gap: 40px 60px;
+      grid-gap: 40px 60px;
    }
 
    .process__items {
       grid-template-columns: repeat(auto-fill, 355px);
-      gap: 20px 10px;
+      grid-gap: 20px 10px;
    }
 }
 
@@ -2148,7 +2150,7 @@ textarea:focus:-ms-input-placeholder {
    .advantages__items,
    .process__items {
       grid-template-columns: 1fr;
-      gap: 35px 0;
+      grid-gap: 35px 0;
    }
 
    .advantages__item:nth-child(even) {
@@ -2187,7 +2189,7 @@ textarea:focus:-ms-input-placeholder {
 
    .advantages__items,
    .process__items {
-      row-gap: 25px;
+      grid-row-gap: 25px;
    }
 
    .process__items .card__subtitle {
@@ -2209,7 +2211,7 @@ textarea:focus:-ms-input-placeholder {
 
    .advantages__items,
    .process__items {
-      row-gap: 10px;
+      grid-row-gap: 10px;
    }
 
    .process__items .card__subtitle {
@@ -3031,7 +3033,7 @@ textarea:focus:-ms-input-placeholder {
    grid-template-columns: repeat(24, 1fr);
    grid-template-rows: auto;
    align-items: center;
-   gap: 50px 30px;
+   grid-gap: 50px 30px;
 }
 
 .customers__image {
@@ -3177,7 +3179,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .customers__item {
-      gap: 40px 20px;
+      grid-gap: 40px 20px;
    }
 }
 
@@ -3199,7 +3201,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .customers__item {
-      gap: 30px 20px;
+      grid-gap: 30px 20px;
    }
 
    .customers__image_hidden {
@@ -3364,7 +3366,7 @@ textarea:focus:-ms-input-placeholder {
 
    .customers__item {
       grid-template-rows: auto;
-      gap: 20px 10px;
+      grid-gap: 20px 10px;
    }
 
    .customers__image img {
@@ -3384,7 +3386,7 @@ textarea:focus:-ms-input-placeholder {
    }
 
    .customers__item {
-      gap: 20px 5px;
+      grid-gap: 20px 5px;
    }
 
    .customers__image img {
