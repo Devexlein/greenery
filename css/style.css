@@ -471,8 +471,8 @@ textarea:focus:-ms-input-placeholder {
 .checkbox {
    display: grid;
    grid-template-columns: 1.5fr 4fr 2fr 3fr;
-   -moz-column-gap: 6%;
-   column-gap: 6%;
+   -moz-column-gap: 55px;
+   column-gap: 55px;
 
    /* display: flex;
    justify-content: space-between; */
@@ -1050,6 +1050,11 @@ textarea:focus:-ms-input-placeholder {
 
    .application__form .form-box__form {
       width: 600px;
+   }
+
+   .checkbox {
+      -moz-column-gap: 30px;
+      column-gap: 30px;
    }
 
    /* .checkbox__item {
@@ -1870,7 +1875,7 @@ textarea:focus:-ms-input-placeholder {
       background-color: #edf4ef;
       padding: 6% 10%;
       transition: all 0.5s ease 0s;
-      overflow: auto;
+      overflow-y: auto;
       -webkit-overflow-scrolling: touch;
       z-index: 49;
    }
