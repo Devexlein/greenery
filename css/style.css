@@ -113,7 +113,8 @@ body {
    font-size: 24px;
    font-weight: 500;
    color: #17291B;
-   background-color: #EDF4EF;
+   background-color: #edf4ef;
+   ;
 }
 
 body.lock {
@@ -371,6 +372,7 @@ a[href^=tel] {
    color: #17291B;
    font-size: 20px;
    opacity: 0.7;
+   -webkit-transition: color 0.3s ease;
    transition: color 0.3s ease;
 }
 
@@ -379,6 +381,7 @@ a[href^=tel] {
    color: #17291B;
    font-size: 20px;
    opacity: 0.7;
+   -moz-transition: color 0.5s ease;
    transition: color 0.5s ease;
 }
 
@@ -387,6 +390,7 @@ a[href^=tel] {
    color: #17291B;
    font-size: 20px;
    opacity: 0.7;
+   -ms-transition: color 0.3s ease;
    transition: color 0.3s ease;
 }
 
@@ -395,6 +399,7 @@ a[href^=tel] {
    color: #17291B;
    font-size: 20px;
    opacity: 0.7;
+   -moz-transition: color 0.3s ease;
    transition: color 0.3s ease;
 }
 
@@ -416,41 +421,49 @@ a[href^=tel] {
 
 input:focus::-webkit-input-placeholder {
    opacity: 0;
+   -webkit-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
 input:focus::-moz-placeholder {
    opacity: 0;
+   -moz-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
 input:focus:-moz-placeholder {
    opacity: 0;
+   -moz-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
 input:focus:-ms-input-placeholder {
    opacity: 0;
+   -ms-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
 textarea:focus::-webkit-input-placeholder {
    opacity: 0;
+   -webkit-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
 textarea:focus::-moz-placeholder {
    opacity: 0;
+   -moz-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
 textarea:focus:-moz-placeholder {
    opacity: 0;
+   -moz-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
 textarea:focus:-ms-input-placeholder {
    opacity: 0;
+   -ms-transition: opacity 0.8s ease;
    transition: opacity 0.8s ease;
 }
 
@@ -458,7 +471,7 @@ textarea:focus:-ms-input-placeholder {
 .checkbox {
    display: grid;
    grid-template-columns: 1.5fr 4fr 2fr 3fr;
-   -webkit-column-gap: 6%;
+   -moz-column-gap: 6%;
    column-gap: 6%;
 
    /* display: flex;
@@ -479,7 +492,6 @@ textarea:focus:-ms-input-placeholder {
    font-size: 22px;
    line-height: 110%;
    color: #17291B;
-   -webkit-transition: color 0.3s ease 0s;
    transition: color 0.3s ease 0s;
 }
 
@@ -534,9 +546,7 @@ textarea:focus:-ms-input-placeholder {
    position: absolute;
    left: 50%;
    top: 50%;
-   -webkit-transform: translate(-50%, -50%) scale(0);
    transform: translate(-50%, -50%) scale(0);
-   -webkit-transition: 0.2s ease-in 0s;
    transition: 0.2s ease-in 0s;
 }
 
@@ -554,7 +564,6 @@ textarea:focus:-ms-input-placeholder {
 
 .checkbox__real-input:checked+.checkbox__custom-input::before {
    background-color: #17291B;
-   -webkit-transform: translate(-50%, -50%) scale(1);
    transform: translate(-50%, -50%) scale(1);
 }
 
@@ -599,6 +608,7 @@ textarea:focus:-ms-input-placeholder {
    display: block;
    width: 100%;
    height: 100%;
+   -o-object-fit: contain;
    object-fit: contain;
    position: absolute;
    top: 0;
@@ -648,6 +658,7 @@ textarea:focus:-ms-input-placeholder {
    display: block;
    width: 100%;
    height: 100%;
+   -o-object-fit: cover;
    object-fit: cover;
    position: absolute;
    top: 0;
@@ -806,6 +817,8 @@ textarea:focus:-ms-input-placeholder {
    flex-direction: row;
    padding: 70px 30px 20px;
    text-align: center;
+   max-width: -webkit-fit-content;
+   max-width: -moz-fit-content;
    max-width: fit-content;
 }
 
@@ -967,7 +980,7 @@ textarea:focus:-ms-input-placeholder {
       font-size: 26px;
       flex: 1 1 auto;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
    }
 
    .socials__icon,
@@ -1256,6 +1269,8 @@ textarea:focus:-ms-input-placeholder {
       flex: 0 1 20%;
       padding-bottom: 20%;
       margin-bottom: 0;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
    }
 
@@ -1266,6 +1281,8 @@ textarea:focus:-ms-input-placeholder {
    .card__subtitle {
       font-size: 24px;
       font-weight: 600;
+      max-width: -webkit-max-content;
+      max-width: -moz-max-content;
       max-width: max-content;
    }
 
@@ -1850,7 +1867,7 @@ textarea:focus:-ms-input-placeholder {
       left: -100%;
       width: 100%;
       border-radius: 0px 0px 15px 15px;
-      background-color: #EDF4EF;
+      background-color: #edf4ef;
       padding: 6% 10%;
       transition: all 0.5s ease 0s;
       overflow: auto;
@@ -2005,6 +2022,7 @@ textarea:focus:-ms-input-placeholder {
 
    .started__blur {
       background: none;
+      -webkit-backdrop-filter: blur(0px);
       backdrop-filter: blur(0px);
       padding: 5% 0%;
    }
@@ -2025,6 +2043,7 @@ textarea:focus:-ms-input-placeholder {
 
    .started__image img {
       width: 100%;
+      -o-object-fit: cover;
       object-fit: cover;
       position: absolute;
       top: -15%;
@@ -2727,6 +2746,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .product-box__wrap-image img {
+   -o-object-fit: contain;
    object-fit: contain;
    max-width: 100%;
 }
@@ -3051,6 +3071,7 @@ textarea:focus:-ms-input-placeholder {
 
 .customers__image img {
    max-width: 100%;
+   -o-object-fit: contain;
    object-fit: contain;
 }
 
@@ -3419,7 +3440,7 @@ textarea:focus:-ms-input-placeholder {
    width: 252px;
    height: 252px;
    border-radius: 50%;
-   background: #EDF4EF;
+   background-color: #edf4ef;
    border: 3px solid #44775F;
    display: flex;
    flex-direction: column;
