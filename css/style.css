@@ -114,7 +114,6 @@ body {
    font-weight: 500;
    color: #17291B;
    background-color: #edf4ef;
-   ;
 }
 
 body.lock {
@@ -337,10 +336,6 @@ body.lock {
    display: flex;
    justify-content: space-between;
 }
-
-/* input[type="checkbox"] {
-   -webkit-appearance: none;
-} */
 
 input[type="tel"],
 input[type="text"],
