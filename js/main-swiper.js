@@ -47,7 +47,7 @@ let paintingsTabsSwiper = new Swiper('.tabs__paintings-slider', {
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
-   grabCursor: true,
+   grabCursor: false,
    // loop: true,
    // loopedSlides: 3,
    observer: true,
@@ -98,7 +98,7 @@ let wallsTabsSwiper = new Swiper('.tabs__walls-slider', {
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
-   grabCursor: true,
+   grabCursor: false,
    // loop: true,
    // loopedSlides: 3,
    observer: true,
@@ -200,7 +200,7 @@ let otherTabsSwiper = new Swiper('.tabs__other-slider', {
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
-   grabCursor: true,
+   grabCursor: false,
    // loop: true,
    // loopedSlides: 3,
    observer: true,
@@ -444,8 +444,6 @@ let popupFeedbackSwiper = new Swiper('.popup-feedback__slider', {
    },
    watchSlidesProgress: true,
    watchSlidesVisibility: true
-   // loop: true,
-   // loopedSlides: 3,
 });
 
 // customers-section
