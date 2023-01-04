@@ -304,27 +304,40 @@ let feedbackSwiper = new Swiper('.feedback__slider', {
 });
 
 let popupFeedbackSwiper = new Swiper('.popup-feedback__slider', {
-   slidesPerView: 3,
+   slidesPerView: 1.4,
    centeredSlides: true,
    effect: 'coverflow',
 
    coverflowEffect: {
-      depth: 30,
-      rotate: 40,
-      stretch: 30,
+      depth: 70,
+      rotate: 50,
+      stretch: 75,
       slideShadows: true,
       scale: 0.6
    },
    breakpoints: {
-      375.98: {
-         slidesPerView: 3,
+      400.98: {
+         slidesPerView: 2,
          spaceBetween: 0,
          effect: 'coverflow',
 
          coverflowEffect: {
-            depth: 60,
-            rotate: 40,
-            stretch: 40,
+            depth: 50,
+            rotate: 30,
+            stretch: 70,
+            slideShadows: true,
+            scale: 0.5
+         },
+      },
+      550.98: {
+         slidesPerView: 2,
+         spaceBetween: 0,
+         effect: 'coverflow',
+
+         coverflowEffect: {
+            depth: 50,
+            rotate: 30,
+            stretch: 90,
             slideShadows: true,
             scale: 0.7
          },

@@ -836,10 +836,10 @@ textarea:focus:-ms-input-placeholder {
 .popup-feedback__btn-prev,
 .popup-feedback__btn-next {
    background: none;
-   width: 25px;
-   height: 25px;
-   border-top: 3px solid #E7B962;
-   border-right: 3px solid #E7B962;
+   width: 27px;
+   height: 27px;
+   border-top: 4px solid #E7B962;
+   border-right: 4px solid #E7B962;
    position: absolute;
    top: calc(55% - 12.5px);
 }
@@ -1123,6 +1123,14 @@ textarea:focus:-ms-input-placeholder {
    .swiper-button-prev,
    .swiper-button-next {
       font-size: 20px;
+   }
+
+   .popup-feedback__btn-prev,
+   .popup-feedback__btn-next {
+      width: 25px;
+      height: 25px;
+      border-top: 3px solid #E7B962;
+      border-right: 3px solid #E7B962;
    }
 }
 
