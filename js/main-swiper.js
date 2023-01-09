@@ -6,13 +6,10 @@ let paintingsTabsSwiper = new Swiper('.tabs__paintings-slider', {
       575.98: {
          slidesPerView: 1,
          spaceBetween: 0,
-         // loop: true,
-         // loopedSlides: 1
       },
       767.98: {
          slidesPerView: 2,
          spaceBetween: 0,
-         // loopedSlides: 2
       },
       991.98: {
          slidesPerView: 3,
@@ -29,9 +26,9 @@ let paintingsTabsSwiper = new Swiper('.tabs__paintings-slider', {
    },
    centerInsufficientSlides: true,
    watchOverflow: true,
-   autoplay: {
-      delay: 2000,
-   },
+   // autoplay: {
+   //    delay: 2000,
+   // },
    navigation: {
       nextEl: '.swiper-button-next.tabs__btn-next_paintings',
       prevEl: '.swiper-button-prev.tabs__btn-prev_paintings'
@@ -47,12 +44,13 @@ let paintingsTabsSwiper = new Swiper('.tabs__paintings-slider', {
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
-   grabCursor: false,
    // loop: true,
    // loopedSlides: 3,
    observer: true,
    observeParents: true,
-   observeSlideChildren: true
+   observeSlideChildren: true,
+   grabCursor: true,
+   // cssMode: true,
 });
 
 let wallsTabsSwiper = new Swiper('.tabs__walls-slider', {
@@ -60,13 +58,10 @@ let wallsTabsSwiper = new Swiper('.tabs__walls-slider', {
       575.98: {
          slidesPerView: 1,
          spaceBetween: 0,
-         // loop: true,
-         // loopedSlides: 1
       },
       767.98: {
          slidesPerView: 2,
          spaceBetween: 0,
-         // loopedSlides: 2
       },
       991.98: {
          slidesPerView: 3,
@@ -98,12 +93,11 @@ let wallsTabsSwiper = new Swiper('.tabs__walls-slider', {
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
-   grabCursor: false,
-   // loop: true,
-   // loopedSlides: 3,
+   grabCursor: true,
    observer: true,
    observeParents: true,
-   observeSlideChildren: true
+   observeSlideChildren: true,
+   // cssMode: true,
 });
 
 let logosTabsSwiper = new Swiper('.tabs__logos-slider', {
@@ -111,13 +105,10 @@ let logosTabsSwiper = new Swiper('.tabs__logos-slider', {
       575.98: {
          slidesPerView: 1,
          spaceBetween: 0,
-         // loop: true,
-         // loopedSlides: 1
       },
       767.98: {
          slidesPerView: 2,
          spaceBetween: 0,
-         // loopedSlides: 2
       },
       991.98: {
          slidesPerView: 3,
@@ -150,11 +141,10 @@ let logosTabsSwiper = new Swiper('.tabs__logos-slider', {
    simulateTouch: true,
    touchRatio: 1,
    grabCursor: true,
-   // loop: true,
-   // loopedSlides: 3,
    observer: true,
    observeParents: true,
-   observeSlideChildren: true
+   observeSlideChildren: true,
+   // cssMode: true,
 });
 
 let otherTabsSwiper = new Swiper('.tabs__other-slider', {
@@ -162,13 +152,10 @@ let otherTabsSwiper = new Swiper('.tabs__other-slider', {
       575.98: {
          slidesPerView: 1,
          spaceBetween: 0,
-         // loop: true,
-         // loopedSlides: 1
       },
       767.98: {
          slidesPerView: 2,
          spaceBetween: 0,
-         // loopedSlides: 2
       },
       991.98: {
          slidesPerView: 3,
@@ -200,12 +187,11 @@ let otherTabsSwiper = new Swiper('.tabs__other-slider', {
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
-   grabCursor: false,
-   // loop: true,
-   // loopedSlides: 3,
+   grabCursor: true,
    observer: true,
    observeParents: true,
-   observeSlideChildren: true
+   observeSlideChildren: true,
+   // cssMode: true,
 });
 
 // products-section
