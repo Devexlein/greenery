@@ -355,7 +355,7 @@ textarea {
 textarea {
    padding-top: 10px;
    height: 120px;
-   resize: vertical;
+   resize: none;
 }
 
 a[href^=tel] {
