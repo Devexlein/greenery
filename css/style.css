@@ -776,7 +776,7 @@ textarea:focus:-ms-input-placeholder {
    transform: translate(-50%, -50%);
 }
 
-.popup__btn-prev,
+/* .popup__btn-prev,
 .popup__btn-next {
    background: none;
    width: 25px;
@@ -785,17 +785,17 @@ textarea:focus:-ms-input-placeholder {
    border-right: 3px solid #E7B962;
    position: absolute;
    top: calc(50% - 12.5px);
-}
+} */
 
-.popup__btn-prev {
+/* .popup__btn-prev {
    transform: rotate(-135deg);
    margin-left: 20%;
-}
+} */
 
-.popup__btn-next {
+/* .popup__btn-next {
    transform: rotate(45deg);
    margin-right: 20%;
-}
+} */
 
 .popup__content {
    position: absolute;
@@ -903,7 +903,19 @@ textarea:focus:-ms-input-placeholder {
 
 /* ---- popup-form *** application-popup ---- */
 #application-popup {
-   background-color: #f5f5f5;
+   background-color: rgba(206, 214, 206, 0.9);
+}
+
+#application-popup .popup__content {
+   padding: 70px 30px 0px;
+}
+
+#application-popup .popup__close {
+   background-color: #44775F;
+}
+
+#application-popup .popup__close::after {
+   background-color: #44775F;
 }
 
 .application__form {
@@ -968,6 +980,13 @@ textarea:focus:-ms-input-placeholder {
    .swiper-button-next {
       font-size: 25px;
    }
+}
+
+@media (max-width: 1100.98px) {
+   #application-popup .popup__close {
+      transform: translate(0%, 0);
+   }
+
 }
 
 @media (max-width: 991.98px) {
@@ -1198,6 +1217,10 @@ textarea:focus:-ms-input-placeholder {
 
    .application__form .form-box__input {
       width: 290px;
+   }
+
+   #application-popup .popup__content {
+      padding: 70px 0px 0px;
    }
 
    .checkbox {

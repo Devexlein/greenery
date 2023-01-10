@@ -225,7 +225,7 @@ let productsSwiper = new Swiper('.products__slider', {
    preventClicks: true,
    simulateTouch: true,
    touchRatio: 1,
-   grabCursor: true,
+   // grabCursor: false,
    cssMode: true
 });
 
