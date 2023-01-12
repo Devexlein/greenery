@@ -223,8 +223,19 @@ body.lock {
    transition: color 0.3s ease 0s;
 }
 
+
+.contacts__phone-number {
+   align-self: flex-end;
+}
+
 .contacts__phone-icon {
    margin-right: 17px;
+   font-size: 24px;
+   border-radius: 50%;
+}
+
+.footer__contacts .contacts__phone-icon {
+   font-size: 28px;
 }
 
 .contacts__email {
